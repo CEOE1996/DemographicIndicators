@@ -8,15 +8,34 @@ namespace DemographicIndicators
 {
     public class clsNatalidad
     {
-        public int Nacimientos;
-        public int Poblacion;
+        public decimal Nt;
+        public decimal Pt;
+        public decimal Mt;
 
-        public clsNatalidad()
+        public decimal TBNt;
+        public decimal RMNt;
+        public decimal TGFt;
+        public decimal TEFt;
+
+        public clsNatalidad(decimal Nt, decimal Pt, decimal Mt)
         {
-            this.Nacimientos = 1;
-            this.Poblacion = 1;
+            this.Nt = Nt;
+            this.Pt = Pt;
+            this.Mt = Mt;
+
+            TBNt = (Nt / Pt) * 1000;
+            TGFt = (Nt / Mt) * 1000;
+            TEFt = (Nt / Mt) * 1000;
         }
 
-        
+        public decimal RatioMasculinidad(decimal NtH, decimal NtM)
+        {
+            RMNt = (NtH / NtM) * 100;
+            return RMNt;
+        }
+
+
+
+
     }
 }
