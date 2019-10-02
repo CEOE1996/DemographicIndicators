@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DemographicIndicators.Clases;
 
 namespace DemographicIndicators
 {
@@ -20,6 +21,12 @@ namespace DemographicIndicators
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
+            if (txt1.Value < 0 || txt2.Value < 0)
+            {
+                MessageBox.Show("Error", "Valor Inválido", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             clsNatalidad natalidad = new clsNatalidad(txt1.Value, txt2.Value, txt2.Value);
 
             if (optNatalidad.Checked) txtResultado.Text = natalidad.TBNt.ToString();

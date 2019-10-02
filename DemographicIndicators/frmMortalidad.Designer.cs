@@ -79,6 +79,7 @@
             this.optRatioMasculinidad.Text = "Ratio de Masculinidad a la Definción";
             this.optRatioMasculinidad.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.optRatioMasculinidad.UseVisualStyleBackColor = true;
+            this.optRatioMasculinidad.CheckedChanged += new System.EventHandler(this.optRatioMasculinidad_CheckedChanged);
             // 
             // optMortalidadEdad
             // 
@@ -89,6 +90,7 @@
             this.optMortalidadEdad.TabIndex = 2;
             this.optMortalidadEdad.Text = "Tasa de Mortalidad por Edad";
             this.optMortalidadEdad.UseVisualStyleBackColor = true;
+            this.optMortalidadEdad.CheckedChanged += new System.EventHandler(this.optMortalidadEdad_CheckedChanged);
             // 
             // optMortalidadSexo
             // 
@@ -99,6 +101,7 @@
             this.optMortalidadSexo.TabIndex = 1;
             this.optMortalidadSexo.Text = "Tasa de Mortalidad por Sexo";
             this.optMortalidadSexo.UseVisualStyleBackColor = true;
+            this.optMortalidadSexo.CheckedChanged += new System.EventHandler(this.optMortalidadSexo_CheckedChanged);
             // 
             // optMortalidad
             // 
@@ -111,6 +114,7 @@
             this.optMortalidad.TabStop = true;
             this.optMortalidad.Text = "Tasa Bruta de Mortalidad";
             this.optMortalidad.UseVisualStyleBackColor = true;
+            this.optMortalidad.CheckedChanged += new System.EventHandler(this.optMortalidad_CheckedChanged);
             // 
             // lbl1
             // 
@@ -119,7 +123,7 @@
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(362, 68);
             this.lbl1.TabIndex = 3;
-            this.lbl1.Text = "Nacimientos Registrados";
+            this.lbl1.Text = "Defunciones Registradas";
             // 
             // lbl2
             // 
@@ -157,6 +161,7 @@
             this.btnCalcular.TabIndex = 9;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // txt2
             // 
