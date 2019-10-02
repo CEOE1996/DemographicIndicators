@@ -47,11 +47,41 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clsNatalidad.cs" />
+    <Compile Include="frmSubMenuMigratorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubMenuMigratorio.Designer.cs">
+      <DependentUpon>frmSubMenuMigratorio.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDivorcialidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDivorcialidad.Designer.cs">
+      <DependentUpon>frmDivorcialidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimientoMigratorio2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimientoMigratorio2.Designer.cs">
+      <DependentUpon>frmMovimientoMigratorio2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMovimientoMigratorio1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMovimientoMigratorio1.Designer.cs">
+      <DependentUpon>frmMovimientoMigratorio1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCrecimientoEstructuraPoblacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCrecimientoEstructuraPoblacion.Designer.cs">
+      <DependentUpon>frmCrecimientoEstructuraPoblacion.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMortalidad.cs">
       <SubType>Form</SubType>
@@ -67,8 +97,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmSubMenuMigratorio.resx">
+      <DependentUpon>frmSubMenuMigratorio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDivorcialidad.resx">
+      <DependentUpon>frmDivorcialidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimientoMigratorio2.resx">
+      <DependentUpon>frmMovimientoMigratorio2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMovimientoMigratorio1.resx">
+      <DependentUpon>frmMovimientoMigratorio1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCrecimientoEstructuraPoblacion.resx">
+      <DependentUpon>frmCrecimientoEstructuraPoblacion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMortalidad.resx">
       <DependentUpon>frmMortalidad.cs</DependentUpon>
