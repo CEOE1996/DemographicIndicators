@@ -24,5 +24,29 @@ namespace DemographicIndicators
             natalidad.ShowDialog();
             this.Show();
         }
+
+        private void BtnDivorcialidad_Click(object sender, EventArgs e)
+        {
+            frmDivorcialidad divorcialidad = new frmDivorcialidad();
+            this.Hide();
+            divorcialidad.ShowDialog();
+            this.Show();
+        }
+
+        private void BtnMigratorio_Click(object sender, EventArgs e)
+        {
+            frmSubMenuMigratorio subMenuMigratorio = new frmSubMenuMigratorio();
+            this.Hide();
+            subMenuMigratorio.ShowDialog();
+            this.Show();
+        }
+
+        private void BtnPoblacion_Click(object sender, EventArgs e)
+        {
+            frmCrecimientoEstructuraPoblacion crecimientoEstructuraPoblacion = new frmCrecimientoEstructuraPoblacion();
+            this.Hide();
+            crecimientoEstructuraPoblacion.ShowDialog();
+            this.Show();
+        }
     }
 }
