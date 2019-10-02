@@ -27,6 +27,9 @@ namespace DemographicIndicators
             else if (optFecundidad.Checked) txtResultado.Text = natalidad.TGFt.ToString();
             else if (optFecundidadQuin.Checked) txtResultado.Text = natalidad.TEFt.ToString();
             else if (optFecundidadEdad.Checked) txtResultado.Text = natalidad.TEFt.ToString();
+            else if (optNacidosOrden.Checked) txtResultado.Text = natalidad.NacidosOrden(txt2.Value).ToString();
+            else if (optNacidosNacionallidad.Checked) txtResultado.Text = natalidad.NacidosNacionalidad(txt2.Value).ToString();
+            else if (optProporcionCasada.Checked) txtResultado.Text = natalidad.NoCasadas(txt2.Value).ToString();
         }
 
         private void optNatalidad_CheckedChanged(object sender, EventArgs e)
@@ -71,6 +74,33 @@ namespace DemographicIndicators
             {
                 lbl1.Text = "Nacimientos Registrados de Madres de edad X";
                 lbl2.Text = "Población media de Mujeres de edad X";
+            }
+        }
+
+        private void optNacidosOrden_CheckedChanged(object sender, EventArgs e)
+        {
+            if (optNacidosOrden.Checked)
+            {
+                lbl1.Text = "Nacimientos Registrados";
+                lbl2.Text = "Nacimientos de orden r Registrados";
+            }
+        }
+
+        private void optNacidosNacionallidad_CheckedChanged(object sender, EventArgs e)
+        {
+            if (optNacidosNacionallidad.Checked)
+            {
+                lbl1.Text = "Nacimientos Registrados";
+                lbl2.Text = "Nacimientos de Nacionalidad n Registrados";
+            }
+        }
+
+        private void optProporcionCasada_CheckedChanged(object sender, EventArgs e)
+        {
+            if (optProporcionCasada.Checked)
+            {
+                lbl1.Text = "Nacimientos Registrados";
+                lbl2.Text = "Nacimientos Registrados de Madres no casadas";
             }
         }
     }
