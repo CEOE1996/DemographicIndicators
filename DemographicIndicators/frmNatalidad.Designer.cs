@@ -30,16 +30,16 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.optNatalidad = new System.Windows.Forms.RadioButton();
-            this.optRatioMasculinidad = new System.Windows.Forms.RadioButton();
-            this.optFecundidadQuin = new System.Windows.Forms.RadioButton();
-            this.optFecundidad = new System.Windows.Forms.RadioButton();
+            this.optProporcionCasada = new System.Windows.Forms.RadioButton();
+            this.optNacidosNacionallidad = new System.Windows.Forms.RadioButton();
             this.optNacidosOrden = new System.Windows.Forms.RadioButton();
             this.optEdadMaternidad = new System.Windows.Forms.RadioButton();
             this.optConyugalFecundidad = new System.Windows.Forms.RadioButton();
             this.optFecundidadEdad = new System.Windows.Forms.RadioButton();
-            this.optProporcionCasada = new System.Windows.Forms.RadioButton();
-            this.optNacidosNacionallidad = new System.Windows.Forms.RadioButton();
+            this.optFecundidadQuin = new System.Windows.Forms.RadioButton();
+            this.optFecundidad = new System.Windows.Forms.RadioButton();
+            this.optRatioMasculinidad = new System.Windows.Forms.RadioButton();
+            this.optNatalidad = new System.Windows.Forms.RadioButton();
             this.lbl1 = new System.Windows.Forms.Label();
             this.lbl2 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -82,51 +82,27 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Seleccione una Opción";
             // 
-            // optNatalidad
+            // optProporcionCasada
             // 
-            this.optNatalidad.AutoSize = true;
-            this.optNatalidad.Checked = true;
-            this.optNatalidad.Location = new System.Drawing.Point(24, 35);
-            this.optNatalidad.Name = "optNatalidad";
-            this.optNatalidad.Size = new System.Drawing.Size(253, 31);
-            this.optNatalidad.TabIndex = 0;
-            this.optNatalidad.TabStop = true;
-            this.optNatalidad.Text = "Tasa Bruta de Natalidad";
-            this.optNatalidad.UseVisualStyleBackColor = true;
-            this.optNatalidad.CheckedChanged += new System.EventHandler(this.optNatalidad_CheckedChanged);
+            this.optProporcionCasada.Location = new System.Drawing.Point(24, 524);
+            this.optProporcionCasada.Name = "optProporcionCasada";
+            this.optProporcionCasada.Size = new System.Drawing.Size(378, 65);
+            this.optProporcionCasada.TabIndex = 9;
+            this.optProporcionCasada.Text = "Proporción Nacidos Madre no Casada";
+            this.optProporcionCasada.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.optProporcionCasada.UseVisualStyleBackColor = true;
+            this.optProporcionCasada.CheckedChanged += new System.EventHandler(this.optProporcionCasada_CheckedChanged);
             // 
-            // optRatioMasculinidad
+            // optNacidosNacionallidad
             // 
-            this.optRatioMasculinidad.AutoSize = true;
-            this.optRatioMasculinidad.Location = new System.Drawing.Point(24, 78);
-            this.optRatioMasculinidad.Name = "optRatioMasculinidad";
-            this.optRatioMasculinidad.Size = new System.Drawing.Size(369, 31);
-            this.optRatioMasculinidad.TabIndex = 1;
-            this.optRatioMasculinidad.Text = "Ratio de Masculinidad al Nacimiento";
-            this.optRatioMasculinidad.UseVisualStyleBackColor = true;
-            this.optRatioMasculinidad.CheckedChanged += new System.EventHandler(this.optRatioMasculinidad_CheckedChanged);
-            // 
-            // optFecundidadQuin
-            // 
-            this.optFecundidadQuin.Location = new System.Drawing.Point(24, 164);
-            this.optFecundidadQuin.Name = "optFecundidadQuin";
-            this.optFecundidadQuin.Size = new System.Drawing.Size(362, 65);
-            this.optFecundidadQuin.TabIndex = 3;
-            this.optFecundidadQuin.Text = "Tasa de Fecundidad por Grupo Quinquenal de Edad de la Madre";
-            this.optFecundidadQuin.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.optFecundidadQuin.UseVisualStyleBackColor = true;
-            this.optFecundidadQuin.CheckedChanged += new System.EventHandler(this.optFecundidadQuin_CheckedChanged);
-            // 
-            // optFecundidad
-            // 
-            this.optFecundidad.AutoSize = true;
-            this.optFecundidad.Location = new System.Drawing.Point(24, 121);
-            this.optFecundidad.Name = "optFecundidad";
-            this.optFecundidad.Size = new System.Drawing.Size(280, 31);
-            this.optFecundidad.TabIndex = 2;
-            this.optFecundidad.Text = "Tasa Global de Fecundidad";
-            this.optFecundidad.UseVisualStyleBackColor = true;
-            this.optFecundidad.CheckedChanged += new System.EventHandler(this.optFecundidad_CheckedChanged);
+            this.optNacidosNacionallidad.Location = new System.Drawing.Point(24, 447);
+            this.optNacidosNacionallidad.Name = "optNacidosNacionallidad";
+            this.optNacidosNacionallidad.Size = new System.Drawing.Size(378, 65);
+            this.optNacidosNacionallidad.TabIndex = 8;
+            this.optNacidosNacionallidad.Text = "% Nacidos por Nacionalidad de la Madre";
+            this.optNacidosNacionallidad.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.optNacidosNacionallidad.UseVisualStyleBackColor = true;
+            this.optNacidosNacionallidad.CheckedChanged += new System.EventHandler(this.optNacidosNacionallidad_CheckedChanged);
             // 
             // optNacidosOrden
             // 
@@ -137,6 +113,7 @@
             this.optNacidosOrden.TabIndex = 7;
             this.optNacidosOrden.Text = "% Nacidos por Orden de Nacimiento";
             this.optNacidosOrden.UseVisualStyleBackColor = true;
+            this.optNacidosOrden.CheckedChanged += new System.EventHandler(this.optNacidosOrden_CheckedChanged);
             // 
             // optEdadMaternidad
             // 
@@ -169,25 +146,51 @@
             this.optFecundidadEdad.UseVisualStyleBackColor = true;
             this.optFecundidadEdad.CheckedChanged += new System.EventHandler(this.optFecundidadEdad_CheckedChanged);
             // 
-            // optProporcionCasada
+            // optFecundidadQuin
             // 
-            this.optProporcionCasada.Location = new System.Drawing.Point(24, 524);
-            this.optProporcionCasada.Name = "optProporcionCasada";
-            this.optProporcionCasada.Size = new System.Drawing.Size(378, 65);
-            this.optProporcionCasada.TabIndex = 9;
-            this.optProporcionCasada.Text = "Proporción Nacidos Madre no Casada";
-            this.optProporcionCasada.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.optProporcionCasada.UseVisualStyleBackColor = true;
+            this.optFecundidadQuin.Location = new System.Drawing.Point(24, 164);
+            this.optFecundidadQuin.Name = "optFecundidadQuin";
+            this.optFecundidadQuin.Size = new System.Drawing.Size(362, 65);
+            this.optFecundidadQuin.TabIndex = 3;
+            this.optFecundidadQuin.Text = "Tasa de Fecundidad por Grupo Quinquenal de Edad de la Madre";
+            this.optFecundidadQuin.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.optFecundidadQuin.UseVisualStyleBackColor = true;
+            this.optFecundidadQuin.CheckedChanged += new System.EventHandler(this.optFecundidadQuin_CheckedChanged);
             // 
-            // optNacidosNacionallidad
+            // optFecundidad
             // 
-            this.optNacidosNacionallidad.Location = new System.Drawing.Point(24, 447);
-            this.optNacidosNacionallidad.Name = "optNacidosNacionallidad";
-            this.optNacidosNacionallidad.Size = new System.Drawing.Size(378, 65);
-            this.optNacidosNacionallidad.TabIndex = 8;
-            this.optNacidosNacionallidad.Text = "% Nacidos por Nacionalidad de la Madre";
-            this.optNacidosNacionallidad.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.optNacidosNacionallidad.UseVisualStyleBackColor = true;
+            this.optFecundidad.AutoSize = true;
+            this.optFecundidad.Location = new System.Drawing.Point(24, 121);
+            this.optFecundidad.Name = "optFecundidad";
+            this.optFecundidad.Size = new System.Drawing.Size(280, 31);
+            this.optFecundidad.TabIndex = 2;
+            this.optFecundidad.Text = "Tasa Global de Fecundidad";
+            this.optFecundidad.UseVisualStyleBackColor = true;
+            this.optFecundidad.CheckedChanged += new System.EventHandler(this.optFecundidad_CheckedChanged);
+            // 
+            // optRatioMasculinidad
+            // 
+            this.optRatioMasculinidad.AutoSize = true;
+            this.optRatioMasculinidad.Location = new System.Drawing.Point(24, 78);
+            this.optRatioMasculinidad.Name = "optRatioMasculinidad";
+            this.optRatioMasculinidad.Size = new System.Drawing.Size(369, 31);
+            this.optRatioMasculinidad.TabIndex = 1;
+            this.optRatioMasculinidad.Text = "Ratio de Masculinidad al Nacimiento";
+            this.optRatioMasculinidad.UseVisualStyleBackColor = true;
+            this.optRatioMasculinidad.CheckedChanged += new System.EventHandler(this.optRatioMasculinidad_CheckedChanged);
+            // 
+            // optNatalidad
+            // 
+            this.optNatalidad.AutoSize = true;
+            this.optNatalidad.Checked = true;
+            this.optNatalidad.Location = new System.Drawing.Point(24, 35);
+            this.optNatalidad.Name = "optNatalidad";
+            this.optNatalidad.Size = new System.Drawing.Size(253, 31);
+            this.optNatalidad.TabIndex = 0;
+            this.optNatalidad.TabStop = true;
+            this.optNatalidad.Text = "Tasa Bruta de Natalidad";
+            this.optNatalidad.UseVisualStyleBackColor = true;
+            this.optNatalidad.CheckedChanged += new System.EventHandler(this.optNatalidad_CheckedChanged);
             // 
             // lbl1
             // 

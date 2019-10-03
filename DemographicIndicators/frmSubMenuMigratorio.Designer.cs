@@ -39,10 +39,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(128, 6);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(192, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(241, 25);
+            this.label1.Size = new System.Drawing.Size(346, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Movimientos Migratorios";
             // 
@@ -51,11 +50,9 @@
             this.groupBox1.Controls.Add(this.btnTasas2);
             this.groupBox1.Controls.Add(this.btnTasas1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(14, 46);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Location = new System.Drawing.Point(21, 71);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(469, 356);
+            this.groupBox1.Size = new System.Drawing.Size(704, 225);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Seleccione la Opción Deseada";
@@ -63,10 +60,9 @@
             // btnTasas2
             // 
             this.btnTasas2.Font = new System.Drawing.Font("Calibri Light", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTasas2.Location = new System.Drawing.Point(18, 84);
-            this.btnTasas2.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTasas2.Location = new System.Drawing.Point(27, 129);
             this.btnTasas2.Name = "btnTasas2";
-            this.btnTasas2.Size = new System.Drawing.Size(432, 42);
+            this.btnTasas2.Size = new System.Drawing.Size(648, 65);
             this.btnTasas2.TabIndex = 1;
             this.btnTasas2.Text = "Indicadores de Migraciones Exteriores";
             this.btnTasas2.UseVisualStyleBackColor = true;
@@ -75,10 +71,9 @@
             // btnTasas1
             // 
             this.btnTasas1.Font = new System.Drawing.Font("Calibri Light", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTasas1.Location = new System.Drawing.Point(18, 31);
-            this.btnTasas1.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTasas1.Location = new System.Drawing.Point(27, 48);
             this.btnTasas1.Name = "btnTasas1";
-            this.btnTasas1.Size = new System.Drawing.Size(432, 42);
+            this.btnTasas1.Size = new System.Drawing.Size(648, 65);
             this.btnTasas1.TabIndex = 0;
             this.btnTasas1.Text = "Indicadores de Migración Exterior";
             this.btnTasas1.UseVisualStyleBackColor = true;
@@ -86,12 +81,11 @@
             // 
             // frmSubMenuMigratorio
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(496, 235);
+            this.ClientSize = new System.Drawing.Size(744, 314);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmSubMenuMigratorio";
             this.Text = "Indicadores Demográficos";
             this.groupBox1.ResumeLayout(false);
