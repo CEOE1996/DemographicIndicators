@@ -68,7 +68,7 @@
             this.btnTasas2.Name = "btnTasas2";
             this.btnTasas2.Size = new System.Drawing.Size(432, 42);
             this.btnTasas2.TabIndex = 1;
-            this.btnTasas2.Text = "Tasas 10 - 18";
+            this.btnTasas2.Text = "Indicadores de Migraciones Exteriores";
             this.btnTasas2.UseVisualStyleBackColor = true;
             this.btnTasas2.Click += new System.EventHandler(this.BtnMortalidad_Click);
             // 
@@ -80,7 +80,7 @@
             this.btnTasas1.Name = "btnTasas1";
             this.btnTasas1.Size = new System.Drawing.Size(432, 42);
             this.btnTasas1.TabIndex = 0;
-            this.btnTasas1.Text = "Tasas 1 - 9";
+            this.btnTasas1.Text = "Indicadores de Migración Exterior";
             this.btnTasas1.UseVisualStyleBackColor = true;
             this.btnTasas1.Click += new System.EventHandler(this.BtnNatalidad_Click);
             // 
