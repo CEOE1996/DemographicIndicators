@@ -17,7 +17,7 @@ namespace DemographicIndicators
             InitializeComponent();
         }
 
-        private void optMortalidad_Click(object sender, EventArgs e)
+        private void btnMortalidad_Click(object sender, EventArgs e)
         {
             frmMortalidad mortalidad = new frmMortalidad();
             this.Hide();
@@ -25,9 +25,20 @@ namespace DemographicIndicators
             this.Show();
         }
 
-        private void optTasas_Click(object sender, EventArgs e)
+        private void btnTasas_Click(object sender, EventArgs e)
         {
+            frmTasasMortalidad tasasMortalidad = new frmTasasMortalidad();
+            this.Hide();
+            tasasMortalidad.ShowDialog();
+            this.Show();
+        }
 
+        private void btmPorcentajes_Click(object sender, EventArgs e)
+        {
+            frmPorcentajesMortalidad porcentajesMortalidad = new frmPorcentajesMortalidad();
+            this.Hide();
+            porcentajesMortalidad.Show();
+            this.Show();
         }
     }
 }

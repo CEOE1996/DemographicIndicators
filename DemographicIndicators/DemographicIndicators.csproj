@@ -48,7 +48,20 @@
   <ItemGroup>
     <Compile Include="Clases\clsMortalidad.cs" />
     <Compile Include="Clases\clsNatalidad.cs" />
+    <Compile Include="Clases\clsPorcentajesMortalidad.cs" />
     <Compile Include="Clases\clsTasasMortalidad.cs" />
+    <Compile Include="frmNupcialidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNupcialidad.Designer.cs">
+      <DependentUpon>frmNupcialidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPorcentajesMortalidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPorcentajesMortalidad.Designer.cs">
+      <DependentUpon>frmPorcentajesMortalidad.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTasasMortalidad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +126,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmMenuMortalidad.resx">
       <DependentUpon>frmMenuMortalidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNupcialidad.resx">
+      <DependentUpon>frmNupcialidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPorcentajesMortalidad.resx">
+      <DependentUpon>frmPorcentajesMortalidad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSubMenuMigratorio.resx">
       <DependentUpon>frmSubMenuMigratorio.cs</DependentUpon>

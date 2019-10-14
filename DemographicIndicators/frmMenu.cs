@@ -48,5 +48,13 @@ namespace DemographicIndicators
             crecimientoEstructuraPoblacion.ShowDialog();
             this.Show();
         }
+
+        private void btnMortalidad_Click(object sender, EventArgs e)
+        {
+            frmMenuMortalidad mortalidad = new frmMenuMortalidad();
+            this.Hide();
+            mortalidad.ShowDialog();
+            this.Show();
+        }
     }
 }

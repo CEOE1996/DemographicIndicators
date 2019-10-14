@@ -80,7 +80,7 @@ namespace DemographicIndicators
 
         private void optFetal_CheckedChanged(object sender, EventArgs e)
         {
-            if (optNeonatalTardia.Checked)
+            if (optFetal.Checked)
             {
                 lbl1.Text = "Muertes Fetales Tardias";
                 lbl2.Text = "Total de Nacidos Vivos Registrados";
@@ -92,7 +92,7 @@ namespace DemographicIndicators
 
         private void optPerinatal_CheckedChanged(object sender, EventArgs e)
         {
-            if (optNeonatalTardia.Checked)
+            if (optPerinatal.Checked)
             {
                 lbl1.Text = "Defunciones Registradas de menores de 7 dias";
                 lbl2.Text = "Total de Nacidos Vivos Registrados";
