@@ -46,9 +46,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lbl2 = new System.Windows.Forms.Label();
             this.lbl1 = new System.Windows.Forms.Label();
+            this.dtgIndicador = new System.Windows.Forms.DataGridView();
+            this.Edad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Matrimonios = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Poblacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgIndicador)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -259,11 +264,45 @@
             this.lbl1.TabIndex = 35;
             this.lbl1.Text = "Matrimonios totales";
             // 
+            // dtgIndicador
+            // 
+            this.dtgIndicador.AllowUserToAddRows = false;
+            this.dtgIndicador.AllowUserToDeleteRows = false;
+            this.dtgIndicador.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgIndicador.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Edad,
+            this.Matrimonios,
+            this.Poblacion});
+            this.dtgIndicador.Location = new System.Drawing.Point(433, 70);
+            this.dtgIndicador.Name = "dtgIndicador";
+            this.dtgIndicador.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
+            this.dtgIndicador.RowTemplate.Height = 28;
+            this.dtgIndicador.Size = new System.Drawing.Size(355, 363);
+            this.dtgIndicador.TabIndex = 42;
+            this.dtgIndicador.Visible = false;
+            // 
+            // Edad
+            // 
+            this.Edad.HeaderText = "Edad";
+            this.Edad.Name = "Edad";
+            this.Edad.ReadOnly = true;
+            // 
+            // Matrimonios
+            // 
+            this.Matrimonios.HeaderText = "Matrimonios";
+            this.Matrimonios.Name = "Matrimonios";
+            // 
+            // Poblacion
+            // 
+            this.Poblacion.HeaderText = "Población";
+            this.Poblacion.Name = "Poblacion";
+            // 
             // frmNupcialidad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 665);
+            this.Controls.Add(this.dtgIndicador);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.label1);
@@ -279,6 +318,7 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgIndicador)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -304,5 +344,9 @@
         private System.Windows.Forms.RadioButton optPrimerMatrimonio;
         private System.Windows.Forms.RadioButton optCoyunturalPrimoNupcialidad;
         private System.Windows.Forms.RadioButton optPrimoNupcialidadEdad;
+        private System.Windows.Forms.DataGridView dtgIndicador;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Edad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Matrimonios;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Poblacion;
     }
 }
