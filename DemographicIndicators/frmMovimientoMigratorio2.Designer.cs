@@ -30,15 +30,15 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.optNacidosNacionallidad = new System.Windows.Forms.RadioButton();
-            this.optNacidosOrden = new System.Windows.Forms.RadioButton();
-            this.optEdadMaternidad = new System.Windows.Forms.RadioButton();
-            this.optConyugalFecundidad = new System.Windows.Forms.RadioButton();
-            this.optFecundidadEdad = new System.Windows.Forms.RadioButton();
-            this.optFecundidadQuin = new System.Windows.Forms.RadioButton();
-            this.optFecundidad = new System.Windows.Forms.RadioButton();
-            this.optRatioMasculinidad = new System.Windows.Forms.RadioButton();
-            this.optNatalidad = new System.Windows.Forms.RadioButton();
+            this.optTasaMigracionInterautonomicaInterprovincialNeta = new System.Windows.Forms.RadioButton();
+            this.optTasaMigracionInterautonomicaInterprovincialBruta = new System.Windows.Forms.RadioButton();
+            this.optIndicadorCoyunturalEmigracionInterautonomicaInterprovincial = new System.Windows.Forms.RadioButton();
+            this.optTasasEmigracionInterautonomicaInterprovincialPorEdad = new System.Windows.Forms.RadioButton();
+            this.optTasaBrutaEmigracionInterautonomicaInterprovincial = new System.Windows.Forms.RadioButton();
+            this.optTasasInmigracionInterautonomicaInterprovincialPorEdad = new System.Windows.Forms.RadioButton();
+            this.optTasaBrutaInmigracionInterautonomicaInterprovincial = new System.Windows.Forms.RadioButton();
+            this.optIndicadorCoyunturalMigracionInterautonomicaInterprovincial = new System.Windows.Forms.RadioButton();
+            this.optTasasMigracionInterautonomicaInterprovincialPorEdad = new System.Windows.Forms.RadioButton();
             this.lbl1 = new System.Windows.Forms.Label();
             this.lbl2 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -64,15 +64,15 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.optNacidosNacionallidad);
-            this.groupBox1.Controls.Add(this.optNacidosOrden);
-            this.groupBox1.Controls.Add(this.optEdadMaternidad);
-            this.groupBox1.Controls.Add(this.optConyugalFecundidad);
-            this.groupBox1.Controls.Add(this.optFecundidadEdad);
-            this.groupBox1.Controls.Add(this.optFecundidadQuin);
-            this.groupBox1.Controls.Add(this.optFecundidad);
-            this.groupBox1.Controls.Add(this.optRatioMasculinidad);
-            this.groupBox1.Controls.Add(this.optNatalidad);
+            this.groupBox1.Controls.Add(this.optTasaMigracionInterautonomicaInterprovincialNeta);
+            this.groupBox1.Controls.Add(this.optTasaMigracionInterautonomicaInterprovincialBruta);
+            this.groupBox1.Controls.Add(this.optIndicadorCoyunturalEmigracionInterautonomicaInterprovincial);
+            this.groupBox1.Controls.Add(this.optTasasEmigracionInterautonomicaInterprovincialPorEdad);
+            this.groupBox1.Controls.Add(this.optTasaBrutaEmigracionInterautonomicaInterprovincial);
+            this.groupBox1.Controls.Add(this.optTasasInmigracionInterautonomicaInterprovincialPorEdad);
+            this.groupBox1.Controls.Add(this.optTasaBrutaInmigracionInterautonomicaInterprovincial);
+            this.groupBox1.Controls.Add(this.optIndicadorCoyunturalMigracionInterautonomicaInterprovincial);
+            this.groupBox1.Controls.Add(this.optTasasMigracionInterautonomicaInterprovincialPorEdad);
             this.groupBox1.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(8, 38);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
@@ -83,100 +83,109 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Seleccione una Opción";
             // 
-            // optNacidosNacionallidad
+            // optTasaMigracionInterautonomicaInterprovincialNeta
             // 
-            this.optNacidosNacionallidad.Location = new System.Drawing.Point(16, 426);
-            this.optNacidosNacionallidad.Margin = new System.Windows.Forms.Padding(2);
-            this.optNacidosNacionallidad.Name = "optNacidosNacionallidad";
-            this.optNacidosNacionallidad.Size = new System.Drawing.Size(252, 42);
-            this.optNacidosNacionallidad.TabIndex = 8;
-            this.optNacidosNacionallidad.Text = "Tasa de migración interautonómica/interprovincial neta";
-            this.optNacidosNacionallidad.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.optNacidosNacionallidad.UseVisualStyleBackColor = true;
+            this.optTasaMigracionInterautonomicaInterprovincialNeta.Location = new System.Drawing.Point(16, 426);
+            this.optTasaMigracionInterautonomicaInterprovincialNeta.Margin = new System.Windows.Forms.Padding(2);
+            this.optTasaMigracionInterautonomicaInterprovincialNeta.Name = "optTasaMigracionInterautonomicaInterprovincialNeta";
+            this.optTasaMigracionInterautonomicaInterprovincialNeta.Size = new System.Drawing.Size(318, 42);
+            this.optTasaMigracionInterautonomicaInterprovincialNeta.TabIndex = 8;
+            this.optTasaMigracionInterautonomicaInterprovincialNeta.Text = "Tasa de migración interautonómica/interprovincial neta";
+            this.optTasaMigracionInterautonomicaInterprovincialNeta.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.optTasaMigracionInterautonomicaInterprovincialNeta.UseVisualStyleBackColor = true;
+            this.optTasaMigracionInterautonomicaInterprovincialNeta.CheckedChanged += new System.EventHandler(this.optTasaMigracionInterautonomicaInterprovincialNeta_CheckedChanged);
             // 
-            // optNacidosOrden
+            // optTasaMigracionInterautonomicaInterprovincialBruta
             // 
-            this.optNacidosOrden.Location = new System.Drawing.Point(16, 375);
-            this.optNacidosOrden.Margin = new System.Windows.Forms.Padding(2);
-            this.optNacidosOrden.Name = "optNacidosOrden";
-            this.optNacidosOrden.Size = new System.Drawing.Size(318, 42);
-            this.optNacidosOrden.TabIndex = 7;
-            this.optNacidosOrden.Text = "Tasa de migración interautonómica/interprovincial bruta";
-            this.optNacidosOrden.UseVisualStyleBackColor = true;
+            this.optTasaMigracionInterautonomicaInterprovincialBruta.Location = new System.Drawing.Point(16, 375);
+            this.optTasaMigracionInterautonomicaInterprovincialBruta.Margin = new System.Windows.Forms.Padding(2);
+            this.optTasaMigracionInterautonomicaInterprovincialBruta.Name = "optTasaMigracionInterautonomicaInterprovincialBruta";
+            this.optTasaMigracionInterautonomicaInterprovincialBruta.Size = new System.Drawing.Size(318, 42);
+            this.optTasaMigracionInterautonomicaInterprovincialBruta.TabIndex = 7;
+            this.optTasaMigracionInterautonomicaInterprovincialBruta.Text = "Tasa de migración interautonómica/interprovincial bruta";
+            this.optTasaMigracionInterautonomicaInterprovincialBruta.UseVisualStyleBackColor = true;
+            this.optTasaMigracionInterautonomicaInterprovincialBruta.CheckedChanged += new System.EventHandler(this.optTasaMigracionInterautonomicaInterprovincialBruta_CheckedChanged);
             // 
-            // optEdadMaternidad
+            // optIndicadorCoyunturalEmigracionInterautonomicaInterprovincial
             // 
-            this.optEdadMaternidad.Location = new System.Drawing.Point(16, 325);
-            this.optEdadMaternidad.Margin = new System.Windows.Forms.Padding(2);
-            this.optEdadMaternidad.Name = "optEdadMaternidad";
-            this.optEdadMaternidad.Size = new System.Drawing.Size(318, 41);
-            this.optEdadMaternidad.TabIndex = 6;
-            this.optEdadMaternidad.Text = "Indicador coyuntural de emigración interautonómica/interprovincial";
-            this.optEdadMaternidad.UseVisualStyleBackColor = true;
+            this.optIndicadorCoyunturalEmigracionInterautonomicaInterprovincial.Location = new System.Drawing.Point(16, 325);
+            this.optIndicadorCoyunturalEmigracionInterautonomicaInterprovincial.Margin = new System.Windows.Forms.Padding(2);
+            this.optIndicadorCoyunturalEmigracionInterautonomicaInterprovincial.Name = "optIndicadorCoyunturalEmigracionInterautonomicaInterprovincial";
+            this.optIndicadorCoyunturalEmigracionInterautonomicaInterprovincial.Size = new System.Drawing.Size(318, 41);
+            this.optIndicadorCoyunturalEmigracionInterautonomicaInterprovincial.TabIndex = 6;
+            this.optIndicadorCoyunturalEmigracionInterautonomicaInterprovincial.Text = "Indicador coyuntural de emigración interautonómica/interprovincial";
+            this.optIndicadorCoyunturalEmigracionInterautonomicaInterprovincial.UseVisualStyleBackColor = true;
+            this.optIndicadorCoyunturalEmigracionInterautonomicaInterprovincial.CheckedChanged += new System.EventHandler(this.optIndicadorCoyunturalEmigracionInterautonomicaInterprovincial_CheckedChanged);
             // 
-            // optConyugalFecundidad
+            // optTasasEmigracionInterautonomicaInterprovincialPorEdad
             // 
-            this.optConyugalFecundidad.Location = new System.Drawing.Point(16, 274);
-            this.optConyugalFecundidad.Margin = new System.Windows.Forms.Padding(2);
-            this.optConyugalFecundidad.Name = "optConyugalFecundidad";
-            this.optConyugalFecundidad.Size = new System.Drawing.Size(318, 42);
-            this.optConyugalFecundidad.TabIndex = 5;
-            this.optConyugalFecundidad.Text = "Tasas de emigración interautonómica/interprovincial por edad";
-            this.optConyugalFecundidad.UseVisualStyleBackColor = true;
+            this.optTasasEmigracionInterautonomicaInterprovincialPorEdad.Location = new System.Drawing.Point(16, 274);
+            this.optTasasEmigracionInterautonomicaInterprovincialPorEdad.Margin = new System.Windows.Forms.Padding(2);
+            this.optTasasEmigracionInterautonomicaInterprovincialPorEdad.Name = "optTasasEmigracionInterautonomicaInterprovincialPorEdad";
+            this.optTasasEmigracionInterautonomicaInterprovincialPorEdad.Size = new System.Drawing.Size(318, 42);
+            this.optTasasEmigracionInterautonomicaInterprovincialPorEdad.TabIndex = 5;
+            this.optTasasEmigracionInterautonomicaInterprovincialPorEdad.Text = "Tasas de emigración interautonómica/interprovincial por edad";
+            this.optTasasEmigracionInterautonomicaInterprovincialPorEdad.UseVisualStyleBackColor = true;
+            this.optTasasEmigracionInterautonomicaInterprovincialPorEdad.CheckedChanged += new System.EventHandler(this.optTasasEmigracionInterautonomicaInterprovincialPorEdad_CheckedChanged);
             // 
-            // optFecundidadEdad
+            // optTasaBrutaEmigracionInterautonomicaInterprovincial
             // 
-            this.optFecundidadEdad.Location = new System.Drawing.Point(16, 223);
-            this.optFecundidadEdad.Margin = new System.Windows.Forms.Padding(2);
-            this.optFecundidadEdad.Name = "optFecundidadEdad";
-            this.optFecundidadEdad.Size = new System.Drawing.Size(223, 42);
-            this.optFecundidadEdad.TabIndex = 4;
-            this.optFecundidadEdad.Text = "Tasa bruta de emigración interautonómica/interprovincial";
-            this.optFecundidadEdad.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.optFecundidadEdad.UseVisualStyleBackColor = true;
+            this.optTasaBrutaEmigracionInterautonomicaInterprovincial.Location = new System.Drawing.Point(16, 223);
+            this.optTasaBrutaEmigracionInterautonomicaInterprovincial.Margin = new System.Windows.Forms.Padding(2);
+            this.optTasaBrutaEmigracionInterautonomicaInterprovincial.Name = "optTasaBrutaEmigracionInterautonomicaInterprovincial";
+            this.optTasaBrutaEmigracionInterautonomicaInterprovincial.Size = new System.Drawing.Size(318, 42);
+            this.optTasaBrutaEmigracionInterautonomicaInterprovincial.TabIndex = 4;
+            this.optTasaBrutaEmigracionInterautonomicaInterprovincial.Text = "Tasa bruta de emigración interautonómica/interprovincial";
+            this.optTasaBrutaEmigracionInterautonomicaInterprovincial.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.optTasaBrutaEmigracionInterautonomicaInterprovincial.UseVisualStyleBackColor = true;
+            this.optTasaBrutaEmigracionInterautonomicaInterprovincial.CheckedChanged += new System.EventHandler(this.optTasaBrutaEmigracionInterautonomicaInterprovincial_CheckedChanged);
             // 
-            // optFecundidadQuin
+            // optTasasInmigracionInterautonomicaInterprovincialPorEdad
             // 
-            this.optFecundidadQuin.Location = new System.Drawing.Point(16, 172);
-            this.optFecundidadQuin.Margin = new System.Windows.Forms.Padding(2);
-            this.optFecundidadQuin.Name = "optFecundidadQuin";
-            this.optFecundidadQuin.Size = new System.Drawing.Size(241, 42);
-            this.optFecundidadQuin.TabIndex = 3;
-            this.optFecundidadQuin.Text = "Tasas de inmigración interautonómica/interprovincial por edad";
-            this.optFecundidadQuin.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.optFecundidadQuin.UseVisualStyleBackColor = true;
+            this.optTasasInmigracionInterautonomicaInterprovincialPorEdad.Location = new System.Drawing.Point(16, 172);
+            this.optTasasInmigracionInterautonomicaInterprovincialPorEdad.Margin = new System.Windows.Forms.Padding(2);
+            this.optTasasInmigracionInterautonomicaInterprovincialPorEdad.Name = "optTasasInmigracionInterautonomicaInterprovincialPorEdad";
+            this.optTasasInmigracionInterautonomicaInterprovincialPorEdad.Size = new System.Drawing.Size(318, 42);
+            this.optTasasInmigracionInterautonomicaInterprovincialPorEdad.TabIndex = 3;
+            this.optTasasInmigracionInterautonomicaInterprovincialPorEdad.Text = "Tasas de inmigración interautonómica/interprovincial por edad";
+            this.optTasasInmigracionInterautonomicaInterprovincialPorEdad.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.optTasasInmigracionInterautonomicaInterprovincialPorEdad.UseVisualStyleBackColor = true;
+            this.optTasasInmigracionInterautonomicaInterprovincialPorEdad.CheckedChanged += new System.EventHandler(this.optTasasInmigracionInterautonomicaInterprovincialPorEdad_CheckedChanged);
             // 
-            // optFecundidad
+            // optTasaBrutaInmigracionInterautonomicaInterprovincial
             // 
-            this.optFecundidad.Location = new System.Drawing.Point(16, 122);
-            this.optFecundidad.Margin = new System.Windows.Forms.Padding(2);
-            this.optFecundidad.Name = "optFecundidad";
-            this.optFecundidad.Size = new System.Drawing.Size(318, 41);
-            this.optFecundidad.TabIndex = 2;
-            this.optFecundidad.Text = "Tasa bruta de inmigración interautonómica/interprovincial";
-            this.optFecundidad.UseVisualStyleBackColor = true;
+            this.optTasaBrutaInmigracionInterautonomicaInterprovincial.Location = new System.Drawing.Point(16, 122);
+            this.optTasaBrutaInmigracionInterautonomicaInterprovincial.Margin = new System.Windows.Forms.Padding(2);
+            this.optTasaBrutaInmigracionInterautonomicaInterprovincial.Name = "optTasaBrutaInmigracionInterautonomicaInterprovincial";
+            this.optTasaBrutaInmigracionInterautonomicaInterprovincial.Size = new System.Drawing.Size(318, 41);
+            this.optTasaBrutaInmigracionInterautonomicaInterprovincial.TabIndex = 2;
+            this.optTasaBrutaInmigracionInterautonomicaInterprovincial.Text = "Tasa bruta de inmigración interautonómica/interprovincial";
+            this.optTasaBrutaInmigracionInterautonomicaInterprovincial.UseVisualStyleBackColor = true;
+            this.optTasaBrutaInmigracionInterautonomicaInterprovincial.CheckedChanged += new System.EventHandler(this.optTasaBrutaInmigracionInterautonomicaInterprovincial_CheckedChanged);
             // 
-            // optRatioMasculinidad
+            // optIndicadorCoyunturalMigracionInterautonomicaInterprovincial
             // 
-            this.optRatioMasculinidad.Location = new System.Drawing.Point(16, 69);
-            this.optRatioMasculinidad.Margin = new System.Windows.Forms.Padding(2);
-            this.optRatioMasculinidad.Name = "optRatioMasculinidad";
-            this.optRatioMasculinidad.Size = new System.Drawing.Size(318, 44);
-            this.optRatioMasculinidad.TabIndex = 1;
-            this.optRatioMasculinidad.Text = "Indicador coyuntural de migración interautonómica/interprovincial";
-            this.optRatioMasculinidad.UseVisualStyleBackColor = true;
+            this.optIndicadorCoyunturalMigracionInterautonomicaInterprovincial.Location = new System.Drawing.Point(16, 69);
+            this.optIndicadorCoyunturalMigracionInterautonomicaInterprovincial.Margin = new System.Windows.Forms.Padding(2);
+            this.optIndicadorCoyunturalMigracionInterautonomicaInterprovincial.Name = "optIndicadorCoyunturalMigracionInterautonomicaInterprovincial";
+            this.optIndicadorCoyunturalMigracionInterautonomicaInterprovincial.Size = new System.Drawing.Size(318, 44);
+            this.optIndicadorCoyunturalMigracionInterautonomicaInterprovincial.TabIndex = 1;
+            this.optIndicadorCoyunturalMigracionInterautonomicaInterprovincial.Text = "Indicador coyuntural de migración interautonómica/interprovincial";
+            this.optIndicadorCoyunturalMigracionInterautonomicaInterprovincial.UseVisualStyleBackColor = true;
+            this.optIndicadorCoyunturalMigracionInterautonomicaInterprovincial.CheckedChanged += new System.EventHandler(this.optIndicadorCoyunturalMigracionInterautonomicaInterprovincial_CheckedChanged);
             // 
-            // optNatalidad
+            // optTasasMigracionInterautonomicaInterprovincialPorEdad
             // 
-            this.optNatalidad.Checked = true;
-            this.optNatalidad.Location = new System.Drawing.Point(16, 18);
-            this.optNatalidad.Margin = new System.Windows.Forms.Padding(2);
-            this.optNatalidad.Name = "optNatalidad";
-            this.optNatalidad.Size = new System.Drawing.Size(318, 42);
-            this.optNatalidad.TabIndex = 0;
-            this.optNatalidad.TabStop = true;
-            this.optNatalidad.Text = "Tasas de migración interautonómica/interprovincial por edad";
-            this.optNatalidad.UseVisualStyleBackColor = true;
+            this.optTasasMigracionInterautonomicaInterprovincialPorEdad.Checked = true;
+            this.optTasasMigracionInterautonomicaInterprovincialPorEdad.Location = new System.Drawing.Point(16, 18);
+            this.optTasasMigracionInterautonomicaInterprovincialPorEdad.Margin = new System.Windows.Forms.Padding(2);
+            this.optTasasMigracionInterautonomicaInterprovincialPorEdad.Name = "optTasasMigracionInterautonomicaInterprovincialPorEdad";
+            this.optTasasMigracionInterautonomicaInterprovincialPorEdad.Size = new System.Drawing.Size(318, 42);
+            this.optTasasMigracionInterautonomicaInterprovincialPorEdad.TabIndex = 0;
+            this.optTasasMigracionInterautonomicaInterprovincialPorEdad.TabStop = true;
+            this.optTasasMigracionInterautonomicaInterprovincialPorEdad.Text = "Tasas de migración interautonómica/interprovincial por edad";
+            this.optTasasMigracionInterautonomicaInterprovincialPorEdad.UseVisualStyleBackColor = true;
+            this.optTasasMigracionInterautonomicaInterprovincialPorEdad.CheckedChanged += new System.EventHandler(this.optTasasMigracionInterautonomicaInterprovincialPorEdad_CheckedChanged);
             // 
             // lbl1
             // 
@@ -228,6 +237,7 @@
             this.btnCalcular.TabIndex = 9;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // txt2
             // 
@@ -286,15 +296,15 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton optNacidosNacionallidad;
-        private System.Windows.Forms.RadioButton optNacidosOrden;
-        private System.Windows.Forms.RadioButton optEdadMaternidad;
-        private System.Windows.Forms.RadioButton optConyugalFecundidad;
-        private System.Windows.Forms.RadioButton optFecundidadEdad;
-        private System.Windows.Forms.RadioButton optFecundidadQuin;
-        private System.Windows.Forms.RadioButton optFecundidad;
-        private System.Windows.Forms.RadioButton optRatioMasculinidad;
-        private System.Windows.Forms.RadioButton optNatalidad;
+        private System.Windows.Forms.RadioButton optTasaMigracionInterautonomicaInterprovincialNeta;
+        private System.Windows.Forms.RadioButton optTasaMigracionInterautonomicaInterprovincialBruta;
+        private System.Windows.Forms.RadioButton optIndicadorCoyunturalEmigracionInterautonomicaInterprovincial;
+        private System.Windows.Forms.RadioButton optTasasEmigracionInterautonomicaInterprovincialPorEdad;
+        private System.Windows.Forms.RadioButton optTasaBrutaEmigracionInterautonomicaInterprovincial;
+        private System.Windows.Forms.RadioButton optTasasInmigracionInterautonomicaInterprovincialPorEdad;
+        private System.Windows.Forms.RadioButton optTasaBrutaInmigracionInterautonomicaInterprovincial;
+        private System.Windows.Forms.RadioButton optIndicadorCoyunturalMigracionInterautonomicaInterprovincial;
+        private System.Windows.Forms.RadioButton optTasasMigracionInterautonomicaInterprovincialPorEdad;
         private System.Windows.Forms.Label lbl1;
         private System.Windows.Forms.Label lbl2;
         private System.Windows.Forms.Label label2;

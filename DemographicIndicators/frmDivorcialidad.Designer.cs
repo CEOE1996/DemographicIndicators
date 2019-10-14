@@ -30,12 +30,12 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.optConyugalFecundidad = new System.Windows.Forms.RadioButton();
-            this.optFecundidadEdad = new System.Windows.Forms.RadioButton();
-            this.optFecundidadQuin = new System.Windows.Forms.RadioButton();
-            this.optFecundidad = new System.Windows.Forms.RadioButton();
-            this.optRatioMasculinidad = new System.Windows.Forms.RadioButton();
-            this.optNatalidad = new System.Windows.Forms.RadioButton();
+            this.optEdadMediaDivorcio = new System.Windows.Forms.RadioButton();
+            this.optIndicadorCoyunturalDivorcialidad = new System.Windows.Forms.RadioButton();
+            this.optTasaDivorcialidadPorEdad = new System.Windows.Forms.RadioButton();
+            this.optTasaDivorcialidad = new System.Windows.Forms.RadioButton();
+            this.optDivorciosSegunDuracionMatrimonio = new System.Windows.Forms.RadioButton();
+            this.optTasaBrutaDivorcios = new System.Windows.Forms.RadioButton();
             this.lbl1 = new System.Windows.Forms.Label();
             this.lbl2 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -61,12 +61,12 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.optConyugalFecundidad);
-            this.groupBox1.Controls.Add(this.optFecundidadEdad);
-            this.groupBox1.Controls.Add(this.optFecundidadQuin);
-            this.groupBox1.Controls.Add(this.optFecundidad);
-            this.groupBox1.Controls.Add(this.optRatioMasculinidad);
-            this.groupBox1.Controls.Add(this.optNatalidad);
+            this.groupBox1.Controls.Add(this.optEdadMediaDivorcio);
+            this.groupBox1.Controls.Add(this.optIndicadorCoyunturalDivorcialidad);
+            this.groupBox1.Controls.Add(this.optTasaDivorcialidadPorEdad);
+            this.groupBox1.Controls.Add(this.optTasaDivorcialidad);
+            this.groupBox1.Controls.Add(this.optDivorciosSegunDuracionMatrimonio);
+            this.groupBox1.Controls.Add(this.optTasaBrutaDivorcios);
             this.groupBox1.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(8, 38);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
@@ -77,71 +77,77 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Seleccione una Opción";
             // 
-            // optConyugalFecundidad
+            // optEdadMediaDivorcio
             // 
-            this.optConyugalFecundidad.AutoSize = true;
-            this.optConyugalFecundidad.Location = new System.Drawing.Point(16, 254);
-            this.optConyugalFecundidad.Margin = new System.Windows.Forms.Padding(2);
-            this.optConyugalFecundidad.Name = "optConyugalFecundidad";
-            this.optConyugalFecundidad.Size = new System.Drawing.Size(165, 22);
-            this.optConyugalFecundidad.TabIndex = 5;
-            this.optConyugalFecundidad.Text = "Edad media al divorcio";
-            this.optConyugalFecundidad.UseVisualStyleBackColor = true;
+            this.optEdadMediaDivorcio.AutoSize = true;
+            this.optEdadMediaDivorcio.Location = new System.Drawing.Point(16, 254);
+            this.optEdadMediaDivorcio.Margin = new System.Windows.Forms.Padding(2);
+            this.optEdadMediaDivorcio.Name = "optEdadMediaDivorcio";
+            this.optEdadMediaDivorcio.Size = new System.Drawing.Size(165, 22);
+            this.optEdadMediaDivorcio.TabIndex = 5;
+            this.optEdadMediaDivorcio.Text = "Edad media al divorcio";
+            this.optEdadMediaDivorcio.UseVisualStyleBackColor = true;
+            this.optEdadMediaDivorcio.CheckedChanged += new System.EventHandler(this.optEdadMediaDivorcio_CheckedChanged);
             // 
-            // optFecundidadEdad
+            // optIndicadorCoyunturalDivorcialidad
             // 
-            this.optFecundidadEdad.Location = new System.Drawing.Point(16, 204);
-            this.optFecundidadEdad.Margin = new System.Windows.Forms.Padding(2);
-            this.optFecundidadEdad.Name = "optFecundidadEdad";
-            this.optFecundidadEdad.Size = new System.Drawing.Size(223, 42);
-            this.optFecundidadEdad.TabIndex = 4;
-            this.optFecundidadEdad.Text = "Indicador coyuntural de divorcialidad";
-            this.optFecundidadEdad.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.optFecundidadEdad.UseVisualStyleBackColor = true;
+            this.optIndicadorCoyunturalDivorcialidad.Location = new System.Drawing.Point(16, 204);
+            this.optIndicadorCoyunturalDivorcialidad.Margin = new System.Windows.Forms.Padding(2);
+            this.optIndicadorCoyunturalDivorcialidad.Name = "optIndicadorCoyunturalDivorcialidad";
+            this.optIndicadorCoyunturalDivorcialidad.Size = new System.Drawing.Size(223, 42);
+            this.optIndicadorCoyunturalDivorcialidad.TabIndex = 4;
+            this.optIndicadorCoyunturalDivorcialidad.Text = "Indicador coyuntural de divorcialidad";
+            this.optIndicadorCoyunturalDivorcialidad.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.optIndicadorCoyunturalDivorcialidad.UseVisualStyleBackColor = true;
+            this.optIndicadorCoyunturalDivorcialidad.CheckedChanged += new System.EventHandler(this.optIndicadorCoyunturalDivorcialidad_CheckedChanged);
             // 
-            // optFecundidadQuin
+            // optTasaDivorcialidadPorEdad
             // 
-            this.optFecundidadQuin.Location = new System.Drawing.Point(16, 154);
-            this.optFecundidadQuin.Margin = new System.Windows.Forms.Padding(2);
-            this.optFecundidadQuin.Name = "optFecundidadQuin";
-            this.optFecundidadQuin.Size = new System.Drawing.Size(241, 42);
-            this.optFecundidadQuin.TabIndex = 3;
-            this.optFecundidadQuin.Text = "Tasas de divorcialidad por edad";
-            this.optFecundidadQuin.UseVisualStyleBackColor = true;
+            this.optTasaDivorcialidadPorEdad.Location = new System.Drawing.Point(16, 154);
+            this.optTasaDivorcialidadPorEdad.Margin = new System.Windows.Forms.Padding(2);
+            this.optTasaDivorcialidadPorEdad.Name = "optTasaDivorcialidadPorEdad";
+            this.optTasaDivorcialidadPorEdad.Size = new System.Drawing.Size(241, 42);
+            this.optTasaDivorcialidadPorEdad.TabIndex = 3;
+            this.optTasaDivorcialidadPorEdad.Text = "Tasas de divorcialidad por edad";
+            this.optTasaDivorcialidadPorEdad.UseVisualStyleBackColor = true;
+            this.optTasaDivorcialidadPorEdad.CheckedChanged += new System.EventHandler(this.optTasaDivorcialidadPorEdad_CheckedChanged);
             // 
-            // optFecundidad
+            // optTasaDivorcialidad
             // 
-            this.optFecundidad.AutoSize = true;
-            this.optFecundidad.Location = new System.Drawing.Point(16, 126);
-            this.optFecundidad.Margin = new System.Windows.Forms.Padding(2);
-            this.optFecundidad.Name = "optFecundidad";
-            this.optFecundidad.Size = new System.Drawing.Size(154, 22);
-            this.optFecundidad.TabIndex = 2;
-            this.optFecundidad.Text = "Tasa de divorcialidad";
-            this.optFecundidad.UseVisualStyleBackColor = true;
+            this.optTasaDivorcialidad.AutoSize = true;
+            this.optTasaDivorcialidad.Location = new System.Drawing.Point(16, 126);
+            this.optTasaDivorcialidad.Margin = new System.Windows.Forms.Padding(2);
+            this.optTasaDivorcialidad.Name = "optTasaDivorcialidad";
+            this.optTasaDivorcialidad.Size = new System.Drawing.Size(154, 22);
+            this.optTasaDivorcialidad.TabIndex = 2;
+            this.optTasaDivorcialidad.Text = "Tasa de divorcialidad";
+            this.optTasaDivorcialidad.UseVisualStyleBackColor = true;
+            this.optTasaDivorcialidad.CheckedChanged += new System.EventHandler(this.optTasaDivorcialidad_CheckedChanged);
             // 
-            // optRatioMasculinidad
+            // optDivorciosSegunDuracionMatrimonio
             // 
-            this.optRatioMasculinidad.Location = new System.Drawing.Point(12, 51);
-            this.optRatioMasculinidad.Margin = new System.Windows.Forms.Padding(2);
-            this.optRatioMasculinidad.Name = "optRatioMasculinidad";
-            this.optRatioMasculinidad.Size = new System.Drawing.Size(256, 71);
-            this.optRatioMasculinidad.TabIndex = 1;
-            this.optRatioMasculinidad.Text = "Proporción de divorcios según la duración del matrimonio";
-            this.optRatioMasculinidad.UseVisualStyleBackColor = true;
+            this.optDivorciosSegunDuracionMatrimonio.Location = new System.Drawing.Point(12, 51);
+            this.optDivorciosSegunDuracionMatrimonio.Margin = new System.Windows.Forms.Padding(2);
+            this.optDivorciosSegunDuracionMatrimonio.Name = "optDivorciosSegunDuracionMatrimonio";
+            this.optDivorciosSegunDuracionMatrimonio.Size = new System.Drawing.Size(256, 71);
+            this.optDivorciosSegunDuracionMatrimonio.TabIndex = 1;
+            this.optDivorciosSegunDuracionMatrimonio.Text = "Proporción de divorcios según la duración del matrimonio";
+            this.optDivorciosSegunDuracionMatrimonio.UseVisualStyleBackColor = true;
+            this.optDivorciosSegunDuracionMatrimonio.CheckedChanged += new System.EventHandler(this.OptDivorciosSegunDuracionMatrimonio_CheckedChanged);
             // 
-            // optNatalidad
+            // optTasaBrutaDivorcios
             // 
-            this.optNatalidad.AutoSize = true;
-            this.optNatalidad.Checked = true;
-            this.optNatalidad.Location = new System.Drawing.Point(12, 23);
-            this.optNatalidad.Margin = new System.Windows.Forms.Padding(2);
-            this.optNatalidad.Name = "optNatalidad";
-            this.optNatalidad.Size = new System.Drawing.Size(167, 22);
-            this.optNatalidad.TabIndex = 0;
-            this.optNatalidad.TabStop = true;
-            this.optNatalidad.Text = "Tasa Bruta de Divorcios";
-            this.optNatalidad.UseVisualStyleBackColor = true;
+            this.optTasaBrutaDivorcios.AutoSize = true;
+            this.optTasaBrutaDivorcios.Checked = true;
+            this.optTasaBrutaDivorcios.Location = new System.Drawing.Point(12, 23);
+            this.optTasaBrutaDivorcios.Margin = new System.Windows.Forms.Padding(2);
+            this.optTasaBrutaDivorcios.Name = "optTasaBrutaDivorcios";
+            this.optTasaBrutaDivorcios.Size = new System.Drawing.Size(167, 22);
+            this.optTasaBrutaDivorcios.TabIndex = 0;
+            this.optTasaBrutaDivorcios.TabStop = true;
+            this.optTasaBrutaDivorcios.Text = "Tasa Bruta de Divorcios";
+            this.optTasaBrutaDivorcios.UseVisualStyleBackColor = true;
+            this.optTasaBrutaDivorcios.CheckedChanged += new System.EventHandler(this.OptTasaBrutaDivorcios_CheckedChanged);
             // 
             // lbl1
             // 
@@ -152,6 +158,7 @@
             this.lbl1.Size = new System.Drawing.Size(241, 44);
             this.lbl1.TabIndex = 3;
             this.lbl1.Text = "Nacimientos Registrados";
+            this.lbl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lbl2
             // 
@@ -162,6 +169,7 @@
             this.lbl2.Size = new System.Drawing.Size(241, 43);
             this.lbl2.TabIndex = 4;
             this.lbl2.Text = "Población";
+            this.lbl2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
@@ -193,6 +201,7 @@
             this.btnCalcular.TabIndex = 9;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.BtnCalcular_Click);
             // 
             // txt2
             // 
@@ -252,12 +261,12 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton optConyugalFecundidad;
-        private System.Windows.Forms.RadioButton optFecundidadEdad;
-        private System.Windows.Forms.RadioButton optFecundidadQuin;
-        private System.Windows.Forms.RadioButton optFecundidad;
-        private System.Windows.Forms.RadioButton optRatioMasculinidad;
-        private System.Windows.Forms.RadioButton optNatalidad;
+        private System.Windows.Forms.RadioButton optEdadMediaDivorcio;
+        private System.Windows.Forms.RadioButton optIndicadorCoyunturalDivorcialidad;
+        private System.Windows.Forms.RadioButton optTasaDivorcialidadPorEdad;
+        private System.Windows.Forms.RadioButton optTasaDivorcialidad;
+        private System.Windows.Forms.RadioButton optDivorciosSegunDuracionMatrimonio;
+        private System.Windows.Forms.RadioButton optTasaBrutaDivorcios;
         private System.Windows.Forms.Label lbl1;
         private System.Windows.Forms.Label lbl2;
         private System.Windows.Forms.Label label2;
