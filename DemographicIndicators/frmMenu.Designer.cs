@@ -107,6 +107,7 @@
             this.btnNupcialidad.TabIndex = 2;
             this.btnNupcialidad.Text = "Nupcialidad";
             this.btnNupcialidad.UseVisualStyleBackColor = true;
+            this.btnNupcialidad.Click += new System.EventHandler(this.btnNupcialidad_Click);
             // 
             // btnMortalidad
             // 

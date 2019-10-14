@@ -10,7 +10,7 @@ namespace DemographicIndicators.Clases
     {
         public decimal Dtm;
         public decimal Dt;
-        public decimal PDt
+        public decimal PDt;
 
         public clsPorcentajesMortalidad(decimal Dtm, decimal Dt)
         {

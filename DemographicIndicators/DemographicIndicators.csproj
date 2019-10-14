@@ -51,6 +51,7 @@
     <Compile Include="Clases\clsDivorcialidad.cs" />
     <Compile Include="Clases\clsMortalidad.cs" />
     <Compile Include="Clases\clsNatalidad.cs" />
+    <Compile Include="Clases\clsNupcialidad.cs" />
     <Compile Include="Clases\clsPorcentajesMortalidad.cs" />
     <Compile Include="Clases\clsTasasMortalidad.cs" />
     <Compile Include="frmNupcialidad.cs">

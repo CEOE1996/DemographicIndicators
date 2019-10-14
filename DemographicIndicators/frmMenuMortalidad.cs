@@ -37,7 +37,7 @@ namespace DemographicIndicators
         {
             frmPorcentajesMortalidad porcentajesMortalidad = new frmPorcentajesMortalidad();
             this.Hide();
-            porcentajesMortalidad.Show();
+            porcentajesMortalidad.ShowDialog();
             this.Show();
         }
     }

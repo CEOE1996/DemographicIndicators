@@ -56,5 +56,13 @@ namespace DemographicIndicators
             mortalidad.ShowDialog();
             this.Show();
         }
+
+        private void btnNupcialidad_Click(object sender, EventArgs e)
+        {
+            frmNupcialidad nupcialidad = new frmNupcialidad();
+            this.Hide();
+            nupcialidad.ShowDialog();
+            this.Show();
+        }
     }
 }

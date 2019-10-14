@@ -29,12 +29,15 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.optPorcentajes6 = new System.Windows.Forms.RadioButton();
-            this.optPorcentaje5 = new System.Windows.Forms.RadioButton();
-            this.optPorcentajes4 = new System.Windows.Forms.RadioButton();
-            this.optPorcentajes3 = new System.Windows.Forms.RadioButton();
-            this.optPorcentajes2 = new System.Windows.Forms.RadioButton();
-            this.optPorcentajes = new System.Windows.Forms.RadioButton();
+            this.optPrimerMatrimonio = new System.Windows.Forms.RadioButton();
+            this.optCoyunturalPrimoNupcialidad = new System.Windows.Forms.RadioButton();
+            this.optPrimoNupcialidadEdad = new System.Windows.Forms.RadioButton();
+            this.optPrimoNupcialidad = new System.Windows.Forms.RadioButton();
+            this.optEdadMedia = new System.Windows.Forms.RadioButton();
+            this.optCoyunturalNupcialidad = new System.Windows.Forms.RadioButton();
+            this.optNupcialidadEdad = new System.Windows.Forms.RadioButton();
+            this.optNupcialidad = new System.Windows.Forms.RadioButton();
+            this.optTasaNupcialidad = new System.Windows.Forms.RadioButton();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txt1 = new System.Windows.Forms.NumericUpDown();
@@ -43,9 +46,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lbl2 = new System.Windows.Forms.Label();
             this.lbl1 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt2)).BeginInit();
@@ -53,15 +53,15 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.optPorcentajes6);
-            this.groupBox1.Controls.Add(this.optPorcentaje5);
-            this.groupBox1.Controls.Add(this.optPorcentajes4);
-            this.groupBox1.Controls.Add(this.optPorcentajes3);
-            this.groupBox1.Controls.Add(this.optPorcentajes2);
-            this.groupBox1.Controls.Add(this.optPorcentajes);
+            this.groupBox1.Controls.Add(this.optPrimerMatrimonio);
+            this.groupBox1.Controls.Add(this.optCoyunturalPrimoNupcialidad);
+            this.groupBox1.Controls.Add(this.optPrimoNupcialidadEdad);
+            this.groupBox1.Controls.Add(this.optPrimoNupcialidad);
+            this.groupBox1.Controls.Add(this.optEdadMedia);
+            this.groupBox1.Controls.Add(this.optCoyunturalNupcialidad);
+            this.groupBox1.Controls.Add(this.optNupcialidadEdad);
+            this.groupBox1.Controls.Add(this.optNupcialidad);
+            this.groupBox1.Controls.Add(this.optTasaNupcialidad);
             this.groupBox1.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 58);
             this.groupBox1.Name = "groupBox1";
@@ -70,69 +70,111 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Seleccione una Opción";
             // 
-            // optPorcentajes6
+            // optPrimerMatrimonio
             // 
-            this.optPorcentajes6.AutoSize = true;
-            this.optPorcentajes6.Location = new System.Drawing.Point(24, 331);
-            this.optPorcentajes6.Name = "optPorcentajes6";
-            this.optPorcentajes6.Size = new System.Drawing.Size(277, 31);
-            this.optPorcentajes6.TabIndex = 6;
-            this.optPorcentajes6.Text = "Tasa de Primo-nupcialidad";
-            this.optPorcentajes6.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.optPorcentajes6.UseVisualStyleBackColor = true;
+            this.optPrimerMatrimonio.AutoSize = true;
+            this.optPrimerMatrimonio.Location = new System.Drawing.Point(24, 521);
+            this.optPrimerMatrimonio.Name = "optPrimerMatrimonio";
+            this.optPrimerMatrimonio.Size = new System.Drawing.Size(347, 31);
+            this.optPrimerMatrimonio.TabIndex = 9;
+            this.optPrimerMatrimonio.Text = "Edad media al primer Matrimonio";
+            this.optPrimerMatrimonio.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.optPrimerMatrimonio.UseVisualStyleBackColor = true;
+            this.optPrimerMatrimonio.CheckedChanged += new System.EventHandler(this.optPrimerMatrimonio_CheckedChanged);
             // 
-            // optPorcentaje5
+            // optCoyunturalPrimoNupcialidad
             // 
-            this.optPorcentaje5.AutoSize = true;
-            this.optPorcentaje5.Location = new System.Drawing.Point(24, 278);
-            this.optPorcentaje5.Name = "optPorcentaje5";
-            this.optPorcentaje5.Size = new System.Drawing.Size(280, 31);
-            this.optPorcentaje5.TabIndex = 5;
-            this.optPorcentaje5.Text = "Edad media al Matrimonio";
-            this.optPorcentaje5.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.optPorcentaje5.UseVisualStyleBackColor = true;
+            this.optCoyunturalPrimoNupcialidad.Location = new System.Drawing.Point(24, 437);
+            this.optCoyunturalPrimoNupcialidad.Name = "optCoyunturalPrimoNupcialidad";
+            this.optCoyunturalPrimoNupcialidad.Size = new System.Drawing.Size(370, 62);
+            this.optCoyunturalPrimoNupcialidad.TabIndex = 8;
+            this.optCoyunturalPrimoNupcialidad.Text = "Indicador Coyuntural de Primo-nupcialidad";
+            this.optCoyunturalPrimoNupcialidad.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.optCoyunturalPrimoNupcialidad.UseVisualStyleBackColor = true;
+            this.optCoyunturalPrimoNupcialidad.CheckedChanged += new System.EventHandler(this.optCoyunturalPrimoNupcialidad_CheckedChanged);
             // 
-            // optPorcentajes4
+            // optPrimoNupcialidadEdad
             // 
-            this.optPorcentajes4.Location = new System.Drawing.Point(24, 194);
-            this.optPorcentajes4.Name = "optPorcentajes4";
-            this.optPorcentajes4.Size = new System.Drawing.Size(370, 62);
-            this.optPorcentajes4.TabIndex = 4;
-            this.optPorcentajes4.Text = "Indicador Coyuntural de Nupcialidad";
-            this.optPorcentajes4.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.optPorcentajes4.UseVisualStyleBackColor = true;
+            this.optPrimoNupcialidadEdad.AutoSize = true;
+            this.optPrimoNupcialidadEdad.Location = new System.Drawing.Point(24, 384);
+            this.optPrimoNupcialidadEdad.Name = "optPrimoNupcialidadEdad";
+            this.optPrimoNupcialidadEdad.Size = new System.Drawing.Size(375, 31);
+            this.optPrimoNupcialidadEdad.TabIndex = 7;
+            this.optPrimoNupcialidadEdad.Text = "Tasas de primo-nupcialidad por edad";
+            this.optPrimoNupcialidadEdad.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.optPrimoNupcialidadEdad.UseVisualStyleBackColor = true;
+            this.optPrimoNupcialidadEdad.CheckedChanged += new System.EventHandler(this.optPrimoNupcialidadEdad_CheckedChanged);
             // 
-            // optPorcentajes3
+            // optPrimoNupcialidad
             // 
-            this.optPorcentajes3.AutoSize = true;
-            this.optPorcentajes3.Location = new System.Drawing.Point(24, 141);
-            this.optPorcentajes3.Name = "optPorcentajes3";
-            this.optPorcentajes3.Size = new System.Drawing.Size(315, 31);
-            this.optPorcentajes3.TabIndex = 3;
-            this.optPorcentajes3.Text = "Tasas de Nupcialidad por edad";
-            this.optPorcentajes3.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.optPorcentajes3.UseVisualStyleBackColor = true;
+            this.optPrimoNupcialidad.AutoSize = true;
+            this.optPrimoNupcialidad.Location = new System.Drawing.Point(24, 331);
+            this.optPrimoNupcialidad.Name = "optPrimoNupcialidad";
+            this.optPrimoNupcialidad.Size = new System.Drawing.Size(277, 31);
+            this.optPrimoNupcialidad.TabIndex = 6;
+            this.optPrimoNupcialidad.Text = "Tasa de Primo-nupcialidad";
+            this.optPrimoNupcialidad.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.optPrimoNupcialidad.UseVisualStyleBackColor = true;
+            this.optPrimoNupcialidad.CheckedChanged += new System.EventHandler(this.optPrimoNupcialidad_CheckedChanged);
             // 
-            // optPorcentajes2
+            // optEdadMedia
             // 
-            this.optPorcentajes2.AutoSize = true;
-            this.optPorcentajes2.Location = new System.Drawing.Point(24, 88);
-            this.optPorcentajes2.Name = "optPorcentajes2";
-            this.optPorcentajes2.Size = new System.Drawing.Size(218, 31);
-            this.optPorcentajes2.TabIndex = 1;
-            this.optPorcentajes2.Text = "Tasa de Nupcialidad";
-            this.optPorcentajes2.UseVisualStyleBackColor = true;
+            this.optEdadMedia.AutoSize = true;
+            this.optEdadMedia.Location = new System.Drawing.Point(24, 278);
+            this.optEdadMedia.Name = "optEdadMedia";
+            this.optEdadMedia.Size = new System.Drawing.Size(280, 31);
+            this.optEdadMedia.TabIndex = 5;
+            this.optEdadMedia.Text = "Edad media al Matrimonio";
+            this.optEdadMedia.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.optEdadMedia.UseVisualStyleBackColor = true;
+            this.optEdadMedia.CheckedChanged += new System.EventHandler(this.optEdadMedia_CheckedChanged);
             // 
-            // optPorcentajes
+            // optCoyunturalNupcialidad
             // 
-            this.optPorcentajes.AutoSize = true;
-            this.optPorcentajes.Checked = true;
-            this.optPorcentajes.Location = new System.Drawing.Point(24, 35);
-            this.optPorcentajes.Name = "optPorcentajes";
-            this.optPorcentajes.Size = new System.Drawing.Size(273, 31);
-            this.optPorcentajes.TabIndex = 0;
-            this.optPorcentajes.Text = "Tasa Bruta de Nupcialidad";
-            this.optPorcentajes.UseVisualStyleBackColor = true;
+            this.optCoyunturalNupcialidad.Location = new System.Drawing.Point(24, 194);
+            this.optCoyunturalNupcialidad.Name = "optCoyunturalNupcialidad";
+            this.optCoyunturalNupcialidad.Size = new System.Drawing.Size(370, 62);
+            this.optCoyunturalNupcialidad.TabIndex = 4;
+            this.optCoyunturalNupcialidad.Text = "Indicador Coyuntural de Nupcialidad";
+            this.optCoyunturalNupcialidad.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.optCoyunturalNupcialidad.UseVisualStyleBackColor = true;
+            this.optCoyunturalNupcialidad.CheckedChanged += new System.EventHandler(this.optCoyunturalNupcialidad_CheckedChanged);
+            // 
+            // optNupcialidadEdad
+            // 
+            this.optNupcialidadEdad.AutoSize = true;
+            this.optNupcialidadEdad.Location = new System.Drawing.Point(24, 141);
+            this.optNupcialidadEdad.Name = "optNupcialidadEdad";
+            this.optNupcialidadEdad.Size = new System.Drawing.Size(315, 31);
+            this.optNupcialidadEdad.TabIndex = 3;
+            this.optNupcialidadEdad.Text = "Tasas de Nupcialidad por edad";
+            this.optNupcialidadEdad.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.optNupcialidadEdad.UseVisualStyleBackColor = true;
+            this.optNupcialidadEdad.CheckedChanged += new System.EventHandler(this.optNupcialidadEdad_CheckedChanged);
+            // 
+            // optNupcialidad
+            // 
+            this.optNupcialidad.AutoSize = true;
+            this.optNupcialidad.Location = new System.Drawing.Point(24, 88);
+            this.optNupcialidad.Name = "optNupcialidad";
+            this.optNupcialidad.Size = new System.Drawing.Size(218, 31);
+            this.optNupcialidad.TabIndex = 1;
+            this.optNupcialidad.Text = "Tasa de Nupcialidad";
+            this.optNupcialidad.UseVisualStyleBackColor = true;
+            this.optNupcialidad.CheckedChanged += new System.EventHandler(this.optNupcialidad_CheckedChanged);
+            // 
+            // optTasaNupcialidad
+            // 
+            this.optTasaNupcialidad.AutoSize = true;
+            this.optTasaNupcialidad.Checked = true;
+            this.optTasaNupcialidad.Location = new System.Drawing.Point(24, 35);
+            this.optTasaNupcialidad.Name = "optTasaNupcialidad";
+            this.optTasaNupcialidad.Size = new System.Drawing.Size(273, 31);
+            this.optTasaNupcialidad.TabIndex = 0;
+            this.optTasaNupcialidad.TabStop = true;
+            this.optTasaNupcialidad.Text = "Tasa Bruta de Nupcialidad";
+            this.optTasaNupcialidad.UseVisualStyleBackColor = true;
+            this.optTasaNupcialidad.CheckedChanged += new System.EventHandler(this.optTasaNupcialidad_CheckedChanged);
             // 
             // btnCalcular
             // 
@@ -143,6 +185,7 @@
             this.btnCalcular.TabIndex = 39;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // label1
             // 
@@ -216,38 +259,6 @@
             this.lbl1.TabIndex = 35;
             this.lbl1.Text = "Matrimonios totales";
             // 
-            // radioButton1
-            // 
-            this.radioButton1.Location = new System.Drawing.Point(24, 437);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(370, 62);
-            this.radioButton1.TabIndex = 8;
-            this.radioButton1.Text = "Indicador Coyuntural de Primo-nupcialidad";
-            this.radioButton1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(24, 384);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(375, 31);
-            this.radioButton2.TabIndex = 7;
-            this.radioButton2.Text = "Tasas de primo-nupcialidad por edad";
-            this.radioButton2.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(24, 521);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(347, 31);
-            this.radioButton3.TabIndex = 9;
-            this.radioButton3.Text = "Edad media al primer Matirmonio";
-            this.radioButton3.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
             // frmNupcialidad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -276,12 +287,12 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton optPorcentajes6;
-        private System.Windows.Forms.RadioButton optPorcentaje5;
-        private System.Windows.Forms.RadioButton optPorcentajes4;
-        private System.Windows.Forms.RadioButton optPorcentajes3;
-        private System.Windows.Forms.RadioButton optPorcentajes2;
-        private System.Windows.Forms.RadioButton optPorcentajes;
+        private System.Windows.Forms.RadioButton optPrimoNupcialidad;
+        private System.Windows.Forms.RadioButton optEdadMedia;
+        private System.Windows.Forms.RadioButton optCoyunturalNupcialidad;
+        private System.Windows.Forms.RadioButton optNupcialidadEdad;
+        private System.Windows.Forms.RadioButton optNupcialidad;
+        private System.Windows.Forms.RadioButton optTasaNupcialidad;
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown txt1;
@@ -290,8 +301,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbl2;
         private System.Windows.Forms.Label lbl1;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton optPrimerMatrimonio;
+        private System.Windows.Forms.RadioButton optCoyunturalPrimoNupcialidad;
+        private System.Windows.Forms.RadioButton optPrimoNupcialidadEdad;
     }
 }
