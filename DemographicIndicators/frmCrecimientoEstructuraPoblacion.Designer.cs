@@ -77,18 +77,18 @@
             this.groupBox1.Controls.Add(this.optNatalidad);
             this.groupBox1.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(8, 38);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(272, 396);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Size = new System.Drawing.Size(272, 469);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Seleccione una Opción";
             // 
             // optProporcionCasada
             // 
-            this.optProporcionCasada.Location = new System.Drawing.Point(16, 341);
-            this.optProporcionCasada.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.optProporcionCasada.Location = new System.Drawing.Point(16, 407);
+            this.optProporcionCasada.Margin = new System.Windows.Forms.Padding(2);
             this.optProporcionCasada.Name = "optProporcionCasada";
             this.optProporcionCasada.Size = new System.Drawing.Size(252, 42);
             this.optProporcionCasada.TabIndex = 9;
@@ -98,8 +98,8 @@
             // 
             // optNacidosNacionallidad
             // 
-            this.optNacidosNacionallidad.Location = new System.Drawing.Point(16, 291);
-            this.optNacidosNacionallidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.optNacidosNacionallidad.Location = new System.Drawing.Point(16, 351);
+            this.optNacidosNacionallidad.Margin = new System.Windows.Forms.Padding(2);
             this.optNacidosNacionallidad.Name = "optNacidosNacionallidad";
             this.optNacidosNacionallidad.Size = new System.Drawing.Size(252, 42);
             this.optNacidosNacionallidad.TabIndex = 8;
@@ -110,8 +110,8 @@
             // optNacidosOrden
             // 
             this.optNacidosOrden.AutoSize = true;
-            this.optNacidosOrden.Location = new System.Drawing.Point(16, 263);
-            this.optNacidosOrden.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.optNacidosOrden.Location = new System.Drawing.Point(16, 315);
+            this.optNacidosOrden.Margin = new System.Windows.Forms.Padding(2);
             this.optNacidosOrden.Name = "optNacidosOrden";
             this.optNacidosOrden.Size = new System.Drawing.Size(249, 22);
             this.optNacidosOrden.TabIndex = 7;
@@ -121,8 +121,8 @@
             // optEdadMaternidad
             // 
             this.optEdadMaternidad.AutoSize = true;
-            this.optEdadMaternidad.Location = new System.Drawing.Point(16, 235);
-            this.optEdadMaternidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.optEdadMaternidad.Location = new System.Drawing.Point(16, 279);
+            this.optEdadMaternidad.Margin = new System.Windows.Forms.Padding(2);
             this.optEdadMaternidad.Name = "optEdadMaternidad";
             this.optEdadMaternidad.Size = new System.Drawing.Size(192, 22);
             this.optEdadMaternidad.TabIndex = 6;
@@ -132,8 +132,8 @@
             // optConyugalFecundidad
             // 
             this.optConyugalFecundidad.AutoSize = true;
-            this.optConyugalFecundidad.Location = new System.Drawing.Point(16, 207);
-            this.optConyugalFecundidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.optConyugalFecundidad.Location = new System.Drawing.Point(16, 243);
+            this.optConyugalFecundidad.Margin = new System.Windows.Forms.Padding(2);
             this.optConyugalFecundidad.Name = "optConyugalFecundidad";
             this.optConyugalFecundidad.Size = new System.Drawing.Size(238, 22);
             this.optConyugalFecundidad.TabIndex = 5;
@@ -142,8 +142,8 @@
             // 
             // optFecundidadEdad
             // 
-            this.optFecundidadEdad.Location = new System.Drawing.Point(16, 157);
-            this.optFecundidadEdad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.optFecundidadEdad.Location = new System.Drawing.Point(16, 187);
+            this.optFecundidadEdad.Margin = new System.Windows.Forms.Padding(2);
             this.optFecundidadEdad.Name = "optFecundidadEdad";
             this.optFecundidadEdad.Size = new System.Drawing.Size(223, 42);
             this.optFecundidadEdad.TabIndex = 4;
@@ -153,8 +153,8 @@
             // 
             // optFecundidadQuin
             // 
-            this.optFecundidadQuin.Location = new System.Drawing.Point(16, 107);
-            this.optFecundidadQuin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.optFecundidadQuin.Location = new System.Drawing.Point(16, 131);
+            this.optFecundidadQuin.Margin = new System.Windows.Forms.Padding(2);
             this.optFecundidadQuin.Name = "optFecundidadQuin";
             this.optFecundidadQuin.Size = new System.Drawing.Size(241, 42);
             this.optFecundidadQuin.TabIndex = 3;
@@ -165,8 +165,8 @@
             // optFecundidad
             // 
             this.optFecundidad.AutoSize = true;
-            this.optFecundidad.Location = new System.Drawing.Point(16, 79);
-            this.optFecundidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.optFecundidad.Location = new System.Drawing.Point(16, 95);
+            this.optFecundidad.Margin = new System.Windows.Forms.Padding(2);
             this.optFecundidad.Name = "optFecundidad";
             this.optFecundidad.Size = new System.Drawing.Size(189, 22);
             this.optFecundidad.TabIndex = 2;
@@ -176,8 +176,8 @@
             // optRatioMasculinidad
             // 
             this.optRatioMasculinidad.AutoSize = true;
-            this.optRatioMasculinidad.Location = new System.Drawing.Point(16, 51);
-            this.optRatioMasculinidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.optRatioMasculinidad.Location = new System.Drawing.Point(16, 59);
+            this.optRatioMasculinidad.Margin = new System.Windows.Forms.Padding(2);
             this.optRatioMasculinidad.Name = "optRatioMasculinidad";
             this.optRatioMasculinidad.Size = new System.Drawing.Size(250, 22);
             this.optRatioMasculinidad.TabIndex = 1;
@@ -189,7 +189,7 @@
             this.optNatalidad.AutoSize = true;
             this.optNatalidad.Checked = true;
             this.optNatalidad.Location = new System.Drawing.Point(16, 23);
-            this.optNatalidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.optNatalidad.Margin = new System.Windows.Forms.Padding(2);
             this.optNatalidad.Name = "optNatalidad";
             this.optNatalidad.Size = new System.Drawing.Size(170, 22);
             this.optNatalidad.TabIndex = 0;
@@ -220,7 +220,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(284, 291);
+            this.label2.Location = new System.Drawing.Point(284, 345);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(241, 30);
@@ -231,8 +231,8 @@
             // 
             this.txtResultado.Enabled = false;
             this.txtResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResultado.Location = new System.Drawing.Point(287, 328);
-            this.txtResultado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtResultado.Location = new System.Drawing.Point(287, 382);
+            this.txtResultado.Margin = new System.Windows.Forms.Padding(2);
             this.txtResultado.Name = "txtResultado";
             this.txtResultado.Size = new System.Drawing.Size(239, 24);
             this.txtResultado.TabIndex = 8;
@@ -240,8 +240,8 @@
             // btnCalcular
             // 
             this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(311, 382);
-            this.btnCalcular.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCalcular.Location = new System.Drawing.Point(311, 436);
+            this.btnCalcular.Margin = new System.Windows.Forms.Padding(2);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(193, 38);
             this.btnCalcular.TabIndex = 9;
@@ -252,7 +252,7 @@
             // 
             this.txt2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt2.Location = new System.Drawing.Point(287, 166);
-            this.txt2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt2.Margin = new System.Windows.Forms.Padding(2);
             this.txt2.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -266,7 +266,7 @@
             // 
             this.txt1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt1.Location = new System.Drawing.Point(287, 93);
-            this.txt1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt1.Margin = new System.Windows.Forms.Padding(2);
             this.txt1.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -280,7 +280,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(533, 440);
+            this.ClientSize = new System.Drawing.Size(533, 518);
             this.Controls.Add(this.txt1);
             this.Controls.Add(this.txt2);
             this.Controls.Add(this.btnCalcular);
@@ -290,7 +290,7 @@
             this.Controls.Add(this.lbl1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmCrecimientoEstructuraPoblacion";
             this.Text = "Natalidad y Fecundidad";
             this.groupBox1.ResumeLayout(false);

@@ -30,16 +30,15 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.optProporcionCasada = new System.Windows.Forms.RadioButton();
-            this.optNacidosNacionallidad = new System.Windows.Forms.RadioButton();
-            this.optNacidosOrden = new System.Windows.Forms.RadioButton();
-            this.optEdadMaternidad = new System.Windows.Forms.RadioButton();
-            this.optConyugalFecundidad = new System.Windows.Forms.RadioButton();
-            this.optFecundidadEdad = new System.Windows.Forms.RadioButton();
-            this.optFecundidadQuin = new System.Windows.Forms.RadioButton();
-            this.optFecundidad = new System.Windows.Forms.RadioButton();
-            this.optRatioMasculinidad = new System.Windows.Forms.RadioButton();
-            this.optNatalidad = new System.Windows.Forms.RadioButton();
+            this.optTasaMigracionNetaConExtranjero = new System.Windows.Forms.RadioButton();
+            this.optTasaMigracionBrutaExtrajero = new System.Windows.Forms.RadioButton();
+            this.optEdadMediaEmigracionDestinoExtranjero = new System.Windows.Forms.RadioButton();
+            this.optIndicadorCoyunturalEmigraiconDestinoExtranjero = new System.Windows.Forms.RadioButton();
+            this.optTasasEmigracionDestinoExtranjeroEdad = new System.Windows.Forms.RadioButton();
+            this.optTasaBrutaEmigracionDestinoExtranjero = new System.Windows.Forms.RadioButton();
+            this.optEdadMediaInmigrantesDelExtranjero = new System.Windows.Forms.RadioButton();
+            this.optTasasInmigracionDelExtranjeroPorEdad = new System.Windows.Forms.RadioButton();
+            this.optTasaBrutaInmigracionDelExtranjero = new System.Windows.Forms.RadioButton();
             this.lbl1 = new System.Windows.Forms.Label();
             this.lbl2 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -59,148 +58,140 @@
             this.label1.Location = new System.Drawing.Point(156, 6);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(238, 25);
+            this.label1.Size = new System.Drawing.Size(189, 25);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Movimiento migratorio 1";
+            this.label1.Text = "Migracion Exterior";
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.optProporcionCasada);
-            this.groupBox1.Controls.Add(this.optNacidosNacionallidad);
-            this.groupBox1.Controls.Add(this.optNacidosOrden);
-            this.groupBox1.Controls.Add(this.optEdadMaternidad);
-            this.groupBox1.Controls.Add(this.optConyugalFecundidad);
-            this.groupBox1.Controls.Add(this.optFecundidadEdad);
-            this.groupBox1.Controls.Add(this.optFecundidadQuin);
-            this.groupBox1.Controls.Add(this.optFecundidad);
-            this.groupBox1.Controls.Add(this.optRatioMasculinidad);
-            this.groupBox1.Controls.Add(this.optNatalidad);
+            this.groupBox1.Controls.Add(this.optTasaMigracionNetaConExtranjero);
+            this.groupBox1.Controls.Add(this.optTasaMigracionBrutaExtrajero);
+            this.groupBox1.Controls.Add(this.optEdadMediaEmigracionDestinoExtranjero);
+            this.groupBox1.Controls.Add(this.optIndicadorCoyunturalEmigraiconDestinoExtranjero);
+            this.groupBox1.Controls.Add(this.optTasasEmigracionDestinoExtranjeroEdad);
+            this.groupBox1.Controls.Add(this.optTasaBrutaEmigracionDestinoExtranjero);
+            this.groupBox1.Controls.Add(this.optEdadMediaInmigrantesDelExtranjero);
+            this.groupBox1.Controls.Add(this.optTasasInmigracionDelExtranjeroPorEdad);
+            this.groupBox1.Controls.Add(this.optTasaBrutaInmigracionDelExtranjero);
             this.groupBox1.Font = new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(8, 38);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(272, 396);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Size = new System.Drawing.Size(337, 455);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Seleccione una Opción";
             // 
-            // optProporcionCasada
+            // optTasaMigracionNetaConExtranjero
             // 
-            this.optProporcionCasada.Location = new System.Drawing.Point(16, 341);
-            this.optProporcionCasada.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.optProporcionCasada.Name = "optProporcionCasada";
-            this.optProporcionCasada.Size = new System.Drawing.Size(252, 42);
-            this.optProporcionCasada.TabIndex = 9;
-            this.optProporcionCasada.Text = "Proporción Nacidos Madre no Casada";
-            this.optProporcionCasada.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.optProporcionCasada.UseVisualStyleBackColor = true;
+            this.optTasaMigracionNetaConExtranjero.Location = new System.Drawing.Point(16, 395);
+            this.optTasaMigracionNetaConExtranjero.Margin = new System.Windows.Forms.Padding(2);
+            this.optTasaMigracionNetaConExtranjero.Name = "optTasaMigracionNetaConExtranjero";
+            this.optTasaMigracionNetaConExtranjero.Size = new System.Drawing.Size(252, 42);
+            this.optTasaMigracionNetaConExtranjero.TabIndex = 8;
+            this.optTasaMigracionNetaConExtranjero.Text = "Tasa de migración neta con el extranjero";
+            this.optTasaMigracionNetaConExtranjero.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.optTasaMigracionNetaConExtranjero.UseVisualStyleBackColor = true;
+            this.optTasaMigracionNetaConExtranjero.CheckedChanged += new System.EventHandler(this.optTasaMigracionNetaConExtranjero_CheckedChanged);
             // 
-            // optNacidosNacionallidad
+            // optTasaMigracionBrutaExtrajero
             // 
-            this.optNacidosNacionallidad.Location = new System.Drawing.Point(16, 291);
-            this.optNacidosNacionallidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.optNacidosNacionallidad.Name = "optNacidosNacionallidad";
-            this.optNacidosNacionallidad.Size = new System.Drawing.Size(252, 42);
-            this.optNacidosNacionallidad.TabIndex = 8;
-            this.optNacidosNacionallidad.Text = "% Nacidos por Nacionalidad de la Madre";
-            this.optNacidosNacionallidad.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.optNacidosNacionallidad.UseVisualStyleBackColor = true;
+            this.optTasaMigracionBrutaExtrajero.AutoSize = true;
+            this.optTasaMigracionBrutaExtrajero.Location = new System.Drawing.Point(16, 369);
+            this.optTasaMigracionBrutaExtrajero.Margin = new System.Windows.Forms.Padding(2);
+            this.optTasaMigracionBrutaExtrajero.Name = "optTasaMigracionBrutaExtrajero";
+            this.optTasaMigracionBrutaExtrajero.Size = new System.Drawing.Size(279, 22);
+            this.optTasaMigracionBrutaExtrajero.TabIndex = 7;
+            this.optTasaMigracionBrutaExtrajero.Text = "Tasa de migración bruta con el extranjero";
+            this.optTasaMigracionBrutaExtrajero.UseVisualStyleBackColor = true;
+            this.optTasaMigracionBrutaExtrajero.CheckedChanged += new System.EventHandler(this.optTasaMigracionBrutaExtrajero_CheckedChanged);
             // 
-            // optNacidosOrden
+            // optEdadMediaEmigracionDestinoExtranjero
             // 
-            this.optNacidosOrden.AutoSize = true;
-            this.optNacidosOrden.Location = new System.Drawing.Point(16, 263);
-            this.optNacidosOrden.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.optNacidosOrden.Name = "optNacidosOrden";
-            this.optNacidosOrden.Size = new System.Drawing.Size(249, 22);
-            this.optNacidosOrden.TabIndex = 7;
-            this.optNacidosOrden.Text = "% Nacidos por Orden de Nacimiento";
-            this.optNacidosOrden.UseVisualStyleBackColor = true;
+            this.optEdadMediaEmigracionDestinoExtranjero.Location = new System.Drawing.Point(16, 312);
+            this.optEdadMediaEmigracionDestinoExtranjero.Margin = new System.Windows.Forms.Padding(2);
+            this.optEdadMediaEmigracionDestinoExtranjero.Name = "optEdadMediaEmigracionDestinoExtranjero";
+            this.optEdadMediaEmigracionDestinoExtranjero.Size = new System.Drawing.Size(279, 53);
+            this.optEdadMediaEmigracionDestinoExtranjero.TabIndex = 6;
+            this.optEdadMediaEmigracionDestinoExtranjero.Text = "Edad media a la emigración con destino al extranjero";
+            this.optEdadMediaEmigracionDestinoExtranjero.UseVisualStyleBackColor = true;
+            this.optEdadMediaEmigracionDestinoExtranjero.CheckedChanged += new System.EventHandler(this.optEdadMediaEmigracionDestinoExtranjero_CheckedChanged);
             // 
-            // optEdadMaternidad
+            // optIndicadorCoyunturalEmigraiconDestinoExtranjero
             // 
-            this.optEdadMaternidad.AutoSize = true;
-            this.optEdadMaternidad.Location = new System.Drawing.Point(16, 235);
-            this.optEdadMaternidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.optEdadMaternidad.Name = "optEdadMaternidad";
-            this.optEdadMaternidad.Size = new System.Drawing.Size(192, 22);
-            this.optEdadMaternidad.TabIndex = 6;
-            this.optEdadMaternidad.Text = "Edad Media de Maternidad";
-            this.optEdadMaternidad.UseVisualStyleBackColor = true;
+            this.optIndicadorCoyunturalEmigraiconDestinoExtranjero.Location = new System.Drawing.Point(16, 266);
+            this.optIndicadorCoyunturalEmigraiconDestinoExtranjero.Margin = new System.Windows.Forms.Padding(2);
+            this.optIndicadorCoyunturalEmigraiconDestinoExtranjero.Name = "optIndicadorCoyunturalEmigraiconDestinoExtranjero";
+            this.optIndicadorCoyunturalEmigraiconDestinoExtranjero.Size = new System.Drawing.Size(279, 42);
+            this.optIndicadorCoyunturalEmigraiconDestinoExtranjero.TabIndex = 5;
+            this.optIndicadorCoyunturalEmigraiconDestinoExtranjero.Text = "Indicador coyuntural de emigración con destino al extranjero";
+            this.optIndicadorCoyunturalEmigraiconDestinoExtranjero.UseVisualStyleBackColor = true;
+            this.optIndicadorCoyunturalEmigraiconDestinoExtranjero.CheckedChanged += new System.EventHandler(this.optIndicadorCoyunturalEmigraiconDestinoExtranjero_CheckedChanged);
             // 
-            // optConyugalFecundidad
+            // optTasasEmigracionDestinoExtranjeroEdad
             // 
-            this.optConyugalFecundidad.AutoSize = true;
-            this.optConyugalFecundidad.Location = new System.Drawing.Point(16, 207);
-            this.optConyugalFecundidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.optConyugalFecundidad.Name = "optConyugalFecundidad";
-            this.optConyugalFecundidad.Size = new System.Drawing.Size(238, 22);
-            this.optConyugalFecundidad.TabIndex = 5;
-            this.optConyugalFecundidad.Text = "Indicador Conyugal de Fecundidad";
-            this.optConyugalFecundidad.UseVisualStyleBackColor = true;
+            this.optTasasEmigracionDestinoExtranjeroEdad.Location = new System.Drawing.Point(16, 220);
+            this.optTasasEmigracionDestinoExtranjeroEdad.Margin = new System.Windows.Forms.Padding(2);
+            this.optTasasEmigracionDestinoExtranjeroEdad.Name = "optTasasEmigracionDestinoExtranjeroEdad";
+            this.optTasasEmigracionDestinoExtranjeroEdad.Size = new System.Drawing.Size(223, 42);
+            this.optTasasEmigracionDestinoExtranjeroEdad.TabIndex = 4;
+            this.optTasasEmigracionDestinoExtranjeroEdad.Text = "Tasas de emigracion con destino al extranjero por edad";
+            this.optTasasEmigracionDestinoExtranjeroEdad.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.optTasasEmigracionDestinoExtranjeroEdad.UseVisualStyleBackColor = true;
+            this.optTasasEmigracionDestinoExtranjeroEdad.CheckedChanged += new System.EventHandler(this.optTasasEmigracionDestinoExtranjeroEdad_CheckedChanged);
             // 
-            // optFecundidadEdad
+            // optTasaBrutaEmigracionDestinoExtranjero
             // 
-            this.optFecundidadEdad.Location = new System.Drawing.Point(16, 157);
-            this.optFecundidadEdad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.optFecundidadEdad.Name = "optFecundidadEdad";
-            this.optFecundidadEdad.Size = new System.Drawing.Size(223, 42);
-            this.optFecundidadEdad.TabIndex = 4;
-            this.optFecundidadEdad.Text = "Tasa de Fecundidad por Edad de la Madre";
-            this.optFecundidadEdad.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.optFecundidadEdad.UseVisualStyleBackColor = true;
+            this.optTasaBrutaEmigracionDestinoExtranjero.Location = new System.Drawing.Point(16, 174);
+            this.optTasaBrutaEmigracionDestinoExtranjero.Margin = new System.Windows.Forms.Padding(2);
+            this.optTasaBrutaEmigracionDestinoExtranjero.Name = "optTasaBrutaEmigracionDestinoExtranjero";
+            this.optTasaBrutaEmigracionDestinoExtranjero.Size = new System.Drawing.Size(241, 42);
+            this.optTasaBrutaEmigracionDestinoExtranjero.TabIndex = 3;
+            this.optTasaBrutaEmigracionDestinoExtranjero.Text = "Tasa bruta de emigración con destino al extranjero";
+            this.optTasaBrutaEmigracionDestinoExtranjero.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.optTasaBrutaEmigracionDestinoExtranjero.UseVisualStyleBackColor = true;
+            this.optTasaBrutaEmigracionDestinoExtranjero.CheckedChanged += new System.EventHandler(this.optTasaBrutaEmigracionDestinoExtranjero_CheckedChanged);
             // 
-            // optFecundidadQuin
+            // optEdadMediaInmigrantesDelExtranjero
             // 
-            this.optFecundidadQuin.Location = new System.Drawing.Point(16, 107);
-            this.optFecundidadQuin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.optFecundidadQuin.Name = "optFecundidadQuin";
-            this.optFecundidadQuin.Size = new System.Drawing.Size(241, 42);
-            this.optFecundidadQuin.TabIndex = 3;
-            this.optFecundidadQuin.Text = "Tasa de Fecundidad por Grupo Quinquenal de Edad de la Madre";
-            this.optFecundidadQuin.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.optFecundidadQuin.UseVisualStyleBackColor = true;
+            this.optEdadMediaInmigrantesDelExtranjero.Location = new System.Drawing.Point(16, 121);
+            this.optEdadMediaInmigrantesDelExtranjero.Margin = new System.Windows.Forms.Padding(2);
+            this.optEdadMediaInmigrantesDelExtranjero.Name = "optEdadMediaInmigrantesDelExtranjero";
+            this.optEdadMediaInmigrantesDelExtranjero.Size = new System.Drawing.Size(241, 49);
+            this.optEdadMediaInmigrantesDelExtranjero.TabIndex = 2;
+            this.optEdadMediaInmigrantesDelExtranjero.Text = "Edad media de los inmigrantes procedentes del extranjero";
+            this.optEdadMediaInmigrantesDelExtranjero.UseVisualStyleBackColor = true;
+            this.optEdadMediaInmigrantesDelExtranjero.CheckedChanged += new System.EventHandler(this.optEdadMediaInmigrantesDelExtranjero_CheckedChanged);
             // 
-            // optFecundidad
+            // optTasasInmigracionDelExtranjeroPorEdad
             // 
-            this.optFecundidad.AutoSize = true;
-            this.optFecundidad.Location = new System.Drawing.Point(16, 79);
-            this.optFecundidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.optFecundidad.Name = "optFecundidad";
-            this.optFecundidad.Size = new System.Drawing.Size(189, 22);
-            this.optFecundidad.TabIndex = 2;
-            this.optFecundidad.Text = "Tasa Global de Fecundidad";
-            this.optFecundidad.UseVisualStyleBackColor = true;
+            this.optTasasInmigracionDelExtranjeroPorEdad.Location = new System.Drawing.Point(16, 75);
+            this.optTasasInmigracionDelExtranjeroPorEdad.Margin = new System.Windows.Forms.Padding(2);
+            this.optTasasInmigracionDelExtranjeroPorEdad.Name = "optTasasInmigracionDelExtranjeroPorEdad";
+            this.optTasasInmigracionDelExtranjeroPorEdad.Size = new System.Drawing.Size(250, 42);
+            this.optTasasInmigracionDelExtranjeroPorEdad.TabIndex = 1;
+            this.optTasasInmigracionDelExtranjeroPorEdad.Text = "Tasas de inmigración procedentes del extranjero por edad";
+            this.optTasasInmigracionDelExtranjeroPorEdad.UseVisualStyleBackColor = true;
+            this.optTasasInmigracionDelExtranjeroPorEdad.CheckedChanged += new System.EventHandler(this.optTasasInmigracionDelExtranjeroPorEdad_CheckedChanged);
             // 
-            // optRatioMasculinidad
+            // optTasaBrutaInmigracionDelExtranjero
             // 
-            this.optRatioMasculinidad.AutoSize = true;
-            this.optRatioMasculinidad.Location = new System.Drawing.Point(16, 51);
-            this.optRatioMasculinidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.optRatioMasculinidad.Name = "optRatioMasculinidad";
-            this.optRatioMasculinidad.Size = new System.Drawing.Size(250, 22);
-            this.optRatioMasculinidad.TabIndex = 1;
-            this.optRatioMasculinidad.Text = "Ratio de Masculinidad al Nacimiento";
-            this.optRatioMasculinidad.UseVisualStyleBackColor = true;
-            // 
-            // optNatalidad
-            // 
-            this.optNatalidad.AutoSize = true;
-            this.optNatalidad.Checked = true;
-            this.optNatalidad.Location = new System.Drawing.Point(16, 23);
-            this.optNatalidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.optNatalidad.Name = "optNatalidad";
-            this.optNatalidad.Size = new System.Drawing.Size(170, 22);
-            this.optNatalidad.TabIndex = 0;
-            this.optNatalidad.TabStop = true;
-            this.optNatalidad.Text = "Tasa Bruta de Natalidad";
-            this.optNatalidad.UseVisualStyleBackColor = true;
+            this.optTasaBrutaInmigracionDelExtranjero.Checked = true;
+            this.optTasaBrutaInmigracionDelExtranjero.Location = new System.Drawing.Point(16, 23);
+            this.optTasaBrutaInmigracionDelExtranjero.Margin = new System.Windows.Forms.Padding(2);
+            this.optTasaBrutaInmigracionDelExtranjero.Name = "optTasaBrutaInmigracionDelExtranjero";
+            this.optTasaBrutaInmigracionDelExtranjero.Size = new System.Drawing.Size(317, 48);
+            this.optTasaBrutaInmigracionDelExtranjero.TabIndex = 0;
+            this.optTasaBrutaInmigracionDelExtranjero.TabStop = true;
+            this.optTasaBrutaInmigracionDelExtranjero.Text = "Tasa bruta de inmigración procedente del extranjero";
+            this.optTasaBrutaInmigracionDelExtranjero.UseVisualStyleBackColor = true;
+            this.optTasaBrutaInmigracionDelExtranjero.CheckedChanged += new System.EventHandler(this.optTasaBrutaInmigracionDelExtranjero_CheckedChanged);
             // 
             // lbl1
             // 
             this.lbl1.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl1.Location = new System.Drawing.Point(284, 47);
+            this.lbl1.Location = new System.Drawing.Point(355, 47);
             this.lbl1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(241, 44);
@@ -210,7 +201,7 @@
             // lbl2
             // 
             this.lbl2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2.Location = new System.Drawing.Point(284, 121);
+            this.lbl2.Location = new System.Drawing.Point(355, 121);
             this.lbl2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl2.Name = "lbl2";
             this.lbl2.Size = new System.Drawing.Size(241, 43);
@@ -220,7 +211,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(284, 291);
+            this.label2.Location = new System.Drawing.Point(355, 291);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(241, 30);
@@ -231,8 +222,8 @@
             // 
             this.txtResultado.Enabled = false;
             this.txtResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtResultado.Location = new System.Drawing.Point(287, 328);
-            this.txtResultado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtResultado.Location = new System.Drawing.Point(358, 328);
+            this.txtResultado.Margin = new System.Windows.Forms.Padding(2);
             this.txtResultado.Name = "txtResultado";
             this.txtResultado.Size = new System.Drawing.Size(239, 24);
             this.txtResultado.TabIndex = 8;
@@ -240,19 +231,20 @@
             // btnCalcular
             // 
             this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(311, 382);
-            this.btnCalcular.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCalcular.Location = new System.Drawing.Point(382, 382);
+            this.btnCalcular.Margin = new System.Windows.Forms.Padding(2);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(193, 38);
             this.btnCalcular.TabIndex = 9;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
             // 
             // txt2
             // 
             this.txt2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt2.Location = new System.Drawing.Point(287, 166);
-            this.txt2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt2.Location = new System.Drawing.Point(358, 166);
+            this.txt2.Margin = new System.Windows.Forms.Padding(2);
             this.txt2.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -265,8 +257,8 @@
             // txt1
             // 
             this.txt1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt1.Location = new System.Drawing.Point(287, 93);
-            this.txt1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt1.Location = new System.Drawing.Point(358, 93);
+            this.txt1.Margin = new System.Windows.Forms.Padding(2);
             this.txt1.Maximum = new decimal(new int[] {
             100000000,
             0,
@@ -276,11 +268,11 @@
             this.txt1.Size = new System.Drawing.Size(238, 24);
             this.txt1.TabIndex = 12;
             // 
-            // frmMovimientoMigratorio
+            // frmMovimientoMigratorio1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(533, 440);
+            this.ClientSize = new System.Drawing.Size(659, 525);
             this.Controls.Add(this.txt1);
             this.Controls.Add(this.txt2);
             this.Controls.Add(this.btnCalcular);
@@ -290,8 +282,8 @@
             this.Controls.Add(this.lbl1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "frmMovimientoMigratorio";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "frmMovimientoMigratorio1";
             this.Text = "Natalidad y Fecundidad";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -306,16 +298,15 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton optProporcionCasada;
-        private System.Windows.Forms.RadioButton optNacidosNacionallidad;
-        private System.Windows.Forms.RadioButton optNacidosOrden;
-        private System.Windows.Forms.RadioButton optEdadMaternidad;
-        private System.Windows.Forms.RadioButton optConyugalFecundidad;
-        private System.Windows.Forms.RadioButton optFecundidadEdad;
-        private System.Windows.Forms.RadioButton optFecundidadQuin;
-        private System.Windows.Forms.RadioButton optFecundidad;
-        private System.Windows.Forms.RadioButton optRatioMasculinidad;
-        private System.Windows.Forms.RadioButton optNatalidad;
+        private System.Windows.Forms.RadioButton optTasaMigracionNetaConExtranjero;
+        private System.Windows.Forms.RadioButton optTasaMigracionBrutaExtrajero;
+        private System.Windows.Forms.RadioButton optEdadMediaEmigracionDestinoExtranjero;
+        private System.Windows.Forms.RadioButton optIndicadorCoyunturalEmigraiconDestinoExtranjero;
+        private System.Windows.Forms.RadioButton optTasasEmigracionDestinoExtranjeroEdad;
+        private System.Windows.Forms.RadioButton optTasaBrutaEmigracionDestinoExtranjero;
+        private System.Windows.Forms.RadioButton optEdadMediaInmigrantesDelExtranjero;
+        private System.Windows.Forms.RadioButton optTasasInmigracionDelExtranjeroPorEdad;
+        private System.Windows.Forms.RadioButton optTasaBrutaInmigracionDelExtranjero;
         private System.Windows.Forms.Label lbl1;
         private System.Windows.Forms.Label lbl2;
         private System.Windows.Forms.Label label2;
